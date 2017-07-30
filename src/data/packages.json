@@ -1,0 +1,1052 @@
+[
+	{
+		"id": 21828,
+		"name": "Goa 3 Nights - Flight & Hotel (Online Only)",
+		"packageType": "FIT",
+		"usp": "",
+		"videoUrl": null,
+		"branch": "DOM",
+		"onlineBookable": true,
+		"ctaPackageOnlineBookable": true,
+		"dynamic": true,
+		"depCityId": 1218,
+		"flightDetails": {
+			"included": true,
+			"title": null,
+			"subtitle": null,
+			"onwardFlights": null,
+			"returnFlights": null
+		},
+		"hotelDetails": {
+			"hotels": [
+				{
+					"id": 3,
+					"name": "Hotel Windsor Bay",
+					"starRating": "3",
+					"rating": "3.5",
+					"cityName": "Goa"
+				}
+			]
+		},
+		"activityDetails": {
+			"title": null,
+			"subtitle": null,
+			"sightSeeingIncluded": false,
+			"sightSeeingCount": 0,
+			"activites": null
+		},
+		"priceDetails": {
+			"price": 13847,
+			"slashedPrice": null,
+			"departureDiscount": null,
+			"paxCount": 2,
+			"departureDate": 1503858600000,
+			"categoryId": 8
+		},
+		"tagDetails": [
+			{
+				"tag": "HolidayType",
+				"values": [
+					"Beach",
+					"Budget",
+					"Shortbreaks",
+					"Featured"
+				]
+			},
+			{
+				"tag": "Theme",
+				"values": [
+					"Shopping, Nightlife",
+					"Family",
+					"Weekend"
+				]
+			},
+			{
+				"tag": "SuitableFor",
+				"values": [
+					"Friends"
+				]
+			}
+		],
+		"dealDetails": {
+			"recommendedCoupons": null,
+			"deals": [
+				"Use SPECIAL10 to book online & get upto 10000 off. ."
+			]
+		},
+		"destinationDetails": {
+			"count": 1,
+			"destinations": [
+				{
+					"seqNo": 1,
+					"name": "Goa",
+					"nights": 3
+				}
+			]
+		},
+		"imageDetails": {
+			"mainImage": {
+				"name": "1200x658_Goa4.jpg",
+				"path": "/cities/1328",
+				"title": "The fascinating beach"
+			},
+			"images": [
+				{
+					"name": "relaz-at-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Relax Sea side"
+				},
+				{
+					"name": "Exotic-beach-umbrellas-and-rocking-chairs-on-tropical-coast-in-Goa.jpg",
+					"path": "/cities/1328",
+					"title": "Exotic beach umbrellas and rocking chairs on tropical coast in Goa"
+				},
+				{
+					"name": "beach1.jpg",
+					"path": "/cities/1328",
+					"title": "Walk on the edge of paradise"
+				},
+				{
+					"name": "goa2.jpg",
+					"path": "/cities/1328",
+					"title": "Discover yourself"
+				},
+				{
+					"name": "goa-party-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Fire Show in Goa"
+				},
+				{
+					"name": "Tropical-bay,-Palolem-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Tropical Bay, Palolem Beach"
+				},
+				{
+					"name": "Goa011.jpg",
+					"path": "/cities/1328",
+					"title": "Explore the beaches"
+				}
+			]
+		},
+		"categoryDetails": {
+			"defaultCategoryId": 8,
+			"categories": [
+				{
+					"id": 8,
+					"name": "Standard"
+				},
+				{
+					"id": 12,
+					"name": "Premium"
+				},
+				{
+					"id": 10,
+					"name": "Deluxe"
+				}
+			]
+		},
+		"tagDestination": "Goa",
+		"pkgCode": "",
+		"nights": 3
+	},
+	{
+		"id": 21828,
+		"name": "Goa 3 Nights - Flight & Hotel (Online Only)",
+		"packageType": "FIT",
+		"usp": "",
+		"videoUrl": null,
+		"branch": "DOM",
+		"onlineBookable": true,
+		"ctaPackageOnlineBookable": true,
+		"dynamic": true,
+		"depCityId": 1218,
+		"flightDetails": {
+			"included": true,
+			"title": null,
+			"subtitle": null,
+			"onwardFlights": null,
+			"returnFlights": null
+		},
+		"hotelDetails": {
+			"hotels": [
+				{
+					"id": 3,
+					"name": "Hotel Windsor Bay",
+					"starRating": "3",
+					"rating": "3.5",
+					"cityName": "Goa"
+				}
+			]
+		},
+		"activityDetails": {
+			"title": null,
+			"subtitle": null,
+			"sightSeeingIncluded": false,
+			"sightSeeingCount": 0,
+			"activites": null
+		},
+		"priceDetails": {
+			"price": 13847,
+			"slashedPrice": null,
+			"departureDiscount": null,
+			"paxCount": 2,
+			"departureDate": 1503858600000,
+			"categoryId": 8
+		},
+		"tagDetails": [
+			{
+				"tag": "HolidayType",
+				"values": [
+					"Beach",
+					"Budget",
+					"Shortbreaks",
+					"Featured"
+				]
+			},
+			{
+				"tag": "Theme",
+				"values": [
+					"Shopping, Nightlife",
+					"Family",
+					"Weekend"
+				]
+			},
+			{
+				"tag": "SuitableFor",
+				"values": [
+					"Friends"
+				]
+			}
+		],
+		"dealDetails": {
+			"recommendedCoupons": null,
+			"deals": [
+				"Use SPECIAL10 to book online & get upto 10000 off. ."
+			]
+		},
+		"destinationDetails": {
+			"count": 1,
+			"destinations": [
+				{
+					"seqNo": 1,
+					"name": "Goa",
+					"nights": 3
+				}
+			]
+		},
+		"imageDetails": {
+			"mainImage": {
+				"name": "1200x658_Goa4.jpg",
+				"path": "/cities/1328",
+				"title": "The fascinating beach"
+			},
+			"images": [
+				{
+					"name": "relaz-at-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Relax Sea side"
+				},
+				{
+					"name": "Exotic-beach-umbrellas-and-rocking-chairs-on-tropical-coast-in-Goa.jpg",
+					"path": "/cities/1328",
+					"title": "Exotic beach umbrellas and rocking chairs on tropical coast in Goa"
+				},
+				{
+					"name": "beach1.jpg",
+					"path": "/cities/1328",
+					"title": "Walk on the edge of paradise"
+				},
+				{
+					"name": "goa2.jpg",
+					"path": "/cities/1328",
+					"title": "Discover yourself"
+				},
+				{
+					"name": "goa-party-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Fire Show in Goa"
+				},
+				{
+					"name": "Tropical-bay,-Palolem-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Tropical Bay, Palolem Beach"
+				},
+				{
+					"name": "Goa011.jpg",
+					"path": "/cities/1328",
+					"title": "Explore the beaches"
+				}
+			]
+		},
+		"categoryDetails": {
+			"defaultCategoryId": 8,
+			"categories": [
+				{
+					"id": 8,
+					"name": "Standard"
+				},
+				{
+					"id": 12,
+					"name": "Premium"
+				},
+				{
+					"id": 10,
+					"name": "Deluxe"
+				}
+			]
+		},
+		"tagDestination": "Goa",
+		"pkgCode": "",
+		"nights": 3
+	},
+	{
+		"id": 21828,
+		"name": "Goa 3 Nights - Flight & Hotel (Online Only)",
+		"packageType": "FIT",
+		"usp": "",
+		"videoUrl": null,
+		"branch": "DOM",
+		"onlineBookable": true,
+		"ctaPackageOnlineBookable": true,
+		"dynamic": true,
+		"depCityId": 1218,
+		"flightDetails": {
+			"included": true,
+			"title": null,
+			"subtitle": null,
+			"onwardFlights": null,
+			"returnFlights": null
+		},
+		"hotelDetails": {
+			"hotels": [
+				{
+					"id": 3,
+					"name": "Hotel Windsor Bay",
+					"starRating": "3",
+					"rating": "3.5",
+					"cityName": "Goa"
+				}
+			]
+		},
+		"activityDetails": {
+			"title": null,
+			"subtitle": null,
+			"sightSeeingIncluded": false,
+			"sightSeeingCount": 0,
+			"activites": null
+		},
+		"priceDetails": {
+			"price": 13847,
+			"slashedPrice": null,
+			"departureDiscount": null,
+			"paxCount": 2,
+			"departureDate": 1503858600000,
+			"categoryId": 8
+		},
+		"tagDetails": [
+			{
+				"tag": "HolidayType",
+				"values": [
+					"Beach",
+					"Budget",
+					"Shortbreaks",
+					"Featured"
+				]
+			},
+			{
+				"tag": "Theme",
+				"values": [
+					"Shopping, Nightlife",
+					"Family",
+					"Weekend"
+				]
+			},
+			{
+				"tag": "SuitableFor",
+				"values": [
+					"Friends"
+				]
+			}
+		],
+		"dealDetails": {
+			"recommendedCoupons": null,
+			"deals": [
+				"Use SPECIAL10 to book online & get upto 10000 off. ."
+			]
+		},
+		"destinationDetails": {
+			"count": 1,
+			"destinations": [
+				{
+					"seqNo": 1,
+					"name": "Goa",
+					"nights": 3
+				}
+			]
+		},
+		"imageDetails": {
+			"mainImage": {
+				"name": "1200x658_Goa4.jpg",
+				"path": "/cities/1328",
+				"title": "The fascinating beach"
+			},
+			"images": [
+				{
+					"name": "relaz-at-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Relax Sea side"
+				},
+				{
+					"name": "Exotic-beach-umbrellas-and-rocking-chairs-on-tropical-coast-in-Goa.jpg",
+					"path": "/cities/1328",
+					"title": "Exotic beach umbrellas and rocking chairs on tropical coast in Goa"
+				},
+				{
+					"name": "beach1.jpg",
+					"path": "/cities/1328",
+					"title": "Walk on the edge of paradise"
+				},
+				{
+					"name": "goa2.jpg",
+					"path": "/cities/1328",
+					"title": "Discover yourself"
+				},
+				{
+					"name": "goa-party-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Fire Show in Goa"
+				},
+				{
+					"name": "Tropical-bay,-Palolem-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Tropical Bay, Palolem Beach"
+				},
+				{
+					"name": "Goa011.jpg",
+					"path": "/cities/1328",
+					"title": "Explore the beaches"
+				}
+			]
+		},
+		"categoryDetails": {
+			"defaultCategoryId": 8,
+			"categories": [
+				{
+					"id": 8,
+					"name": "Standard"
+				},
+				{
+					"id": 12,
+					"name": "Premium"
+				},
+				{
+					"id": 10,
+					"name": "Deluxe"
+				}
+			]
+		},
+		"tagDestination": "Goa",
+		"pkgCode": "",
+		"nights": 3
+	},
+	{
+		"id": 21828,
+		"name": "Goa 3 Nights - Flight & Hotel (Online Only)",
+		"packageType": "FIT",
+		"usp": "",
+		"videoUrl": null,
+		"branch": "DOM",
+		"onlineBookable": true,
+		"ctaPackageOnlineBookable": true,
+		"dynamic": true,
+		"depCityId": 1218,
+		"flightDetails": {
+			"included": true,
+			"title": null,
+			"subtitle": null,
+			"onwardFlights": null,
+			"returnFlights": null
+		},
+		"hotelDetails": {
+			"hotels": [
+				{
+					"id": 3,
+					"name": "Hotel Windsor Bay",
+					"starRating": "3",
+					"rating": "3.5",
+					"cityName": "Goa"
+				}
+			]
+		},
+		"activityDetails": {
+			"title": null,
+			"subtitle": null,
+			"sightSeeingIncluded": false,
+			"sightSeeingCount": 0,
+			"activites": null
+		},
+		"priceDetails": {
+			"price": 13847,
+			"slashedPrice": null,
+			"departureDiscount": null,
+			"paxCount": 2,
+			"departureDate": 1503858600000,
+			"categoryId": 8
+		},
+		"tagDetails": [
+			{
+				"tag": "HolidayType",
+				"values": [
+					"Beach",
+					"Budget",
+					"Shortbreaks",
+					"Featured"
+				]
+			},
+			{
+				"tag": "Theme",
+				"values": [
+					"Shopping, Nightlife",
+					"Family",
+					"Weekend"
+				]
+			},
+			{
+				"tag": "SuitableFor",
+				"values": [
+					"Friends"
+				]
+			}
+		],
+		"dealDetails": {
+			"recommendedCoupons": null,
+			"deals": [
+				"Use SPECIAL10 to book online & get upto 10000 off. ."
+			]
+		},
+		"destinationDetails": {
+			"count": 1,
+			"destinations": [
+				{
+					"seqNo": 1,
+					"name": "Goa",
+					"nights": 3
+				}
+			]
+		},
+		"imageDetails": {
+			"mainImage": {
+				"name": "1200x658_Goa4.jpg",
+				"path": "/cities/1328",
+				"title": "The fascinating beach"
+			},
+			"images": [
+				{
+					"name": "relaz-at-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Relax Sea side"
+				},
+				{
+					"name": "Exotic-beach-umbrellas-and-rocking-chairs-on-tropical-coast-in-Goa.jpg",
+					"path": "/cities/1328",
+					"title": "Exotic beach umbrellas and rocking chairs on tropical coast in Goa"
+				},
+				{
+					"name": "beach1.jpg",
+					"path": "/cities/1328",
+					"title": "Walk on the edge of paradise"
+				},
+				{
+					"name": "goa2.jpg",
+					"path": "/cities/1328",
+					"title": "Discover yourself"
+				},
+				{
+					"name": "goa-party-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Fire Show in Goa"
+				},
+				{
+					"name": "Tropical-bay,-Palolem-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Tropical Bay, Palolem Beach"
+				},
+				{
+					"name": "Goa011.jpg",
+					"path": "/cities/1328",
+					"title": "Explore the beaches"
+				}
+			]
+		},
+		"categoryDetails": {
+			"defaultCategoryId": 8,
+			"categories": [
+				{
+					"id": 8,
+					"name": "Standard"
+				},
+				{
+					"id": 12,
+					"name": "Premium"
+				},
+				{
+					"id": 10,
+					"name": "Deluxe"
+				}
+			]
+		},
+		"tagDestination": "Goa",
+		"pkgCode": "",
+		"nights": 3
+	},
+	{
+		"id": 21828,
+		"name": "Goa 3 Nights - Flight & Hotel (Online Only)",
+		"packageType": "FIT",
+		"usp": "",
+		"videoUrl": null,
+		"branch": "DOM",
+		"onlineBookable": true,
+		"ctaPackageOnlineBookable": true,
+		"dynamic": true,
+		"depCityId": 1218,
+		"flightDetails": {
+			"included": true,
+			"title": null,
+			"subtitle": null,
+			"onwardFlights": null,
+			"returnFlights": null
+		},
+		"hotelDetails": {
+			"hotels": [
+				{
+					"id": 3,
+					"name": "Hotel Windsor Bay",
+					"starRating": "3",
+					"rating": "3.5",
+					"cityName": "Goa"
+				}
+			]
+		},
+		"activityDetails": {
+			"title": null,
+			"subtitle": null,
+			"sightSeeingIncluded": false,
+			"sightSeeingCount": 0,
+			"activites": null
+		},
+		"priceDetails": {
+			"price": 13847,
+			"slashedPrice": null,
+			"departureDiscount": null,
+			"paxCount": 2,
+			"departureDate": 1503858600000,
+			"categoryId": 8
+		},
+		"tagDetails": [
+			{
+				"tag": "HolidayType",
+				"values": [
+					"Beach",
+					"Budget",
+					"Shortbreaks",
+					"Featured"
+				]
+			},
+			{
+				"tag": "Theme",
+				"values": [
+					"Shopping, Nightlife",
+					"Family",
+					"Weekend"
+				]
+			},
+			{
+				"tag": "SuitableFor",
+				"values": [
+					"Friends"
+				]
+			}
+		],
+		"dealDetails": {
+			"recommendedCoupons": null,
+			"deals": [
+				"Use SPECIAL10 to book online & get upto 10000 off. ."
+			]
+		},
+		"destinationDetails": {
+			"count": 1,
+			"destinations": [
+				{
+					"seqNo": 1,
+					"name": "Goa",
+					"nights": 3
+				}
+			]
+		},
+		"imageDetails": {
+			"mainImage": {
+				"name": "1200x658_Goa4.jpg",
+				"path": "/cities/1328",
+				"title": "The fascinating beach"
+			},
+			"images": [
+				{
+					"name": "relaz-at-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Relax Sea side"
+				},
+				{
+					"name": "Exotic-beach-umbrellas-and-rocking-chairs-on-tropical-coast-in-Goa.jpg",
+					"path": "/cities/1328",
+					"title": "Exotic beach umbrellas and rocking chairs on tropical coast in Goa"
+				},
+				{
+					"name": "beach1.jpg",
+					"path": "/cities/1328",
+					"title": "Walk on the edge of paradise"
+				},
+				{
+					"name": "goa2.jpg",
+					"path": "/cities/1328",
+					"title": "Discover yourself"
+				},
+				{
+					"name": "goa-party-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Fire Show in Goa"
+				},
+				{
+					"name": "Tropical-bay,-Palolem-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Tropical Bay, Palolem Beach"
+				},
+				{
+					"name": "Goa011.jpg",
+					"path": "/cities/1328",
+					"title": "Explore the beaches"
+				}
+			]
+		},
+		"categoryDetails": {
+			"defaultCategoryId": 8,
+			"categories": [
+				{
+					"id": 8,
+					"name": "Standard"
+				},
+				{
+					"id": 12,
+					"name": "Premium"
+				},
+				{
+					"id": 10,
+					"name": "Deluxe"
+				}
+			]
+		},
+		"tagDestination": "Goa",
+		"pkgCode": "",
+		"nights": 3
+	},
+	{
+		"id": 21828,
+		"name": "Goa 3 Nights - Flight & Hotel (Online Only)",
+		"packageType": "FIT",
+		"usp": "",
+		"videoUrl": null,
+		"branch": "DOM",
+		"onlineBookable": true,
+		"ctaPackageOnlineBookable": true,
+		"dynamic": true,
+		"depCityId": 1218,
+		"flightDetails": {
+			"included": true,
+			"title": null,
+			"subtitle": null,
+			"onwardFlights": null,
+			"returnFlights": null
+		},
+		"hotelDetails": {
+			"hotels": [
+				{
+					"id": 3,
+					"name": "Hotel Windsor Bay",
+					"starRating": "3",
+					"rating": "3.5",
+					"cityName": "Goa"
+				}
+			]
+		},
+		"activityDetails": {
+			"title": null,
+			"subtitle": null,
+			"sightSeeingIncluded": false,
+			"sightSeeingCount": 0,
+			"activites": null
+		},
+		"priceDetails": {
+			"price": 13847,
+			"slashedPrice": null,
+			"departureDiscount": null,
+			"paxCount": 2,
+			"departureDate": 1503858600000,
+			"categoryId": 8
+		},
+		"tagDetails": [
+			{
+				"tag": "HolidayType",
+				"values": [
+					"Beach",
+					"Budget",
+					"Shortbreaks",
+					"Featured"
+				]
+			},
+			{
+				"tag": "Theme",
+				"values": [
+					"Shopping, Nightlife",
+					"Family",
+					"Weekend"
+				]
+			},
+			{
+				"tag": "SuitableFor",
+				"values": [
+					"Friends"
+				]
+			}
+		],
+		"dealDetails": {
+			"recommendedCoupons": null,
+			"deals": [
+				"Use SPECIAL10 to book online & get upto 10000 off. ."
+			]
+		},
+		"destinationDetails": {
+			"count": 1,
+			"destinations": [
+				{
+					"seqNo": 1,
+					"name": "Goa",
+					"nights": 3
+				}
+			]
+		},
+		"imageDetails": {
+			"mainImage": {
+				"name": "1200x658_Goa4.jpg",
+				"path": "/cities/1328",
+				"title": "The fascinating beach"
+			},
+			"images": [
+				{
+					"name": "relaz-at-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Relax Sea side"
+				},
+				{
+					"name": "Exotic-beach-umbrellas-and-rocking-chairs-on-tropical-coast-in-Goa.jpg",
+					"path": "/cities/1328",
+					"title": "Exotic beach umbrellas and rocking chairs on tropical coast in Goa"
+				},
+				{
+					"name": "beach1.jpg",
+					"path": "/cities/1328",
+					"title": "Walk on the edge of paradise"
+				},
+				{
+					"name": "goa2.jpg",
+					"path": "/cities/1328",
+					"title": "Discover yourself"
+				},
+				{
+					"name": "goa-party-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Fire Show in Goa"
+				},
+				{
+					"name": "Tropical-bay,-Palolem-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Tropical Bay, Palolem Beach"
+				},
+				{
+					"name": "Goa011.jpg",
+					"path": "/cities/1328",
+					"title": "Explore the beaches"
+				}
+			]
+		},
+		"categoryDetails": {
+			"defaultCategoryId": 8,
+			"categories": [
+				{
+					"id": 8,
+					"name": "Standard"
+				},
+				{
+					"id": 12,
+					"name": "Premium"
+				},
+				{
+					"id": 10,
+					"name": "Deluxe"
+				}
+			]
+		},
+		"tagDestination": "Goa",
+		"pkgCode": "",
+		"nights": 3
+	},
+	{
+		"id": 21828,
+		"name": "Goa 3 Nights - Flight & Hotel (Online Only)",
+		"packageType": "FIT",
+		"usp": "",
+		"videoUrl": null,
+		"branch": "DOM",
+		"onlineBookable": true,
+		"ctaPackageOnlineBookable": true,
+		"dynamic": true,
+		"depCityId": 1218,
+		"flightDetails": {
+			"included": true,
+			"title": null,
+			"subtitle": null,
+			"onwardFlights": null,
+			"returnFlights": null
+		},
+		"hotelDetails": {
+			"hotels": [
+				{
+					"id": 3,
+					"name": "Hotel Windsor Bay",
+					"starRating": "3",
+					"rating": "3.5",
+					"cityName": "Goa"
+				}
+			]
+		},
+		"activityDetails": {
+			"title": null,
+			"subtitle": null,
+			"sightSeeingIncluded": false,
+			"sightSeeingCount": 0,
+			"activites": null
+		},
+		"priceDetails": {
+			"price": 13847,
+			"slashedPrice": null,
+			"departureDiscount": null,
+			"paxCount": 2,
+			"departureDate": 1503858600000,
+			"categoryId": 8
+		},
+		"tagDetails": [
+			{
+				"tag": "HolidayType",
+				"values": [
+					"Beach",
+					"Budget",
+					"Shortbreaks",
+					"Featured"
+				]
+			},
+			{
+				"tag": "Theme",
+				"values": [
+					"Shopping, Nightlife",
+					"Family",
+					"Weekend"
+				]
+			},
+			{
+				"tag": "SuitableFor",
+				"values": [
+					"Friends"
+				]
+			}
+		],
+		"dealDetails": {
+			"recommendedCoupons": null,
+			"deals": [
+				"Use SPECIAL10 to book online & get upto 10000 off. ."
+			]
+		},
+		"destinationDetails": {
+			"count": 1,
+			"destinations": [
+				{
+					"seqNo": 1,
+					"name": "Goa",
+					"nights": 3
+				}
+			]
+		},
+		"imageDetails": {
+			"mainImage": {
+				"name": "1200x658_Goa4.jpg",
+				"path": "/cities/1328",
+				"title": "The fascinating beach"
+			},
+			"images": [
+				{
+					"name": "relaz-at-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Relax Sea side"
+				},
+				{
+					"name": "Exotic-beach-umbrellas-and-rocking-chairs-on-tropical-coast-in-Goa.jpg",
+					"path": "/cities/1328",
+					"title": "Exotic beach umbrellas and rocking chairs on tropical coast in Goa"
+				},
+				{
+					"name": "beach1.jpg",
+					"path": "/cities/1328",
+					"title": "Walk on the edge of paradise"
+				},
+				{
+					"name": "goa2.jpg",
+					"path": "/cities/1328",
+					"title": "Discover yourself"
+				},
+				{
+					"name": "goa-party-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Fire Show in Goa"
+				},
+				{
+					"name": "Tropical-bay,-Palolem-beach.jpg",
+					"path": "/cities/1328",
+					"title": "Tropical Bay, Palolem Beach"
+				},
+				{
+					"name": "Goa011.jpg",
+					"path": "/cities/1328",
+					"title": "Explore the beaches"
+				}
+			]
+		},
+		"categoryDetails": {
+			"defaultCategoryId": 8,
+			"categories": [
+				{
+					"id": 8,
+					"name": "Standard"
+				},
+				{
+					"id": 12,
+					"name": "Premium"
+				},
+				{
+					"id": 10,
+					"name": "Deluxe"
+				}
+			]
+		},
+		"tagDestination": "Goa",
+		"pkgCode": "",
+		"nights": 3
+	}
+]

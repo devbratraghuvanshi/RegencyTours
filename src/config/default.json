@@ -1,0 +1,5 @@
+{
+    "dbConfig": {
+        "connectionStr": "mongodb://localhost/RegencyDB"
+    }
+}
