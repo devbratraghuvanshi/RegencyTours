@@ -1,5 +1,5 @@
-import { mongoose } from './../dbConfig/db';
+import { model } from 'mongoose';
 import { IPackageModel } from './interfacePackageModel';
 import * as Schema from './schema';
-export let Packages = mongoose.model<IPackageModel>("Package", Schema.packageSchema);
+export let Packages = model<IPackageModel>("Package", Schema.packageSchema);
 

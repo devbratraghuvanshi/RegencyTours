@@ -1,6 +1,5 @@
 
-import { mongoose } from './../dbConfig/db';
-const Schema = mongoose.Schema;
+import { Schema } from 'mongoose';
 
 export let FlightDetails = new Schema({
     included: Boolean,

@@ -22,11 +22,11 @@
     "config": "^1.26.1",
     "debug": "^2.6.8",
     "express": "^4.15.3",
-    "jwt-simple": "^0.5.1",
+    "jwt-simple": "^0.5.1",//as encoder and decoder of JSON tokens;
     "mongoose": "^4.11.4",
     "morgan": "^1.8.2",
-    "passport": "^0.3.2",
-    "passport-jwt": "^2.2.1"
+    "passport": "^0.3.2", //as authentication’s engine;
+    "passport-jwt": "^2.2.1" //as JWT authentication’s strategy for Passport;
   },
   "devDependencies": {
     "@types/bcrypt": "^1.0.0",
