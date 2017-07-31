@@ -2,13 +2,15 @@ import * as bcrypt from 'bcrypt';
 import { Document, Schema, model } from 'mongoose';
 
 // User Interface 
-export interface IUser extends Document {
+export interface IUserModel extends Document {
   name: string;
   userId: string;
   password: String; 
   email:String; 
   mobile:String;
+  comparePassword(password : string, callback: Function): void ;
 };
+
 
 //User Schema
 export const UserSchema = new Schema({
@@ -38,6 +40,7 @@ export const UserSchema = new Schema({
 UserSchema.pre('save', function (next) {
     var user = this;
     if (this.isModified('password') || this.isNew) {
+
         bcrypt.genSalt(10, function (err, salt) {
             if (err) {
                 return next(err);
@@ -64,5 +67,5 @@ UserSchema.methods.comparePassword = function (password, callback) {
     });
 };
 
-const User = model<IUser>('User', UserSchema);
+const User = model<IUserModel>('User', UserSchema);
 export default User;

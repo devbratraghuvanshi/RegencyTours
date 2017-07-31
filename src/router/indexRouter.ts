@@ -1,6 +1,7 @@
 import {Router, Request, Response, NextFunction} from 'express';
 import IndexController from './../controller/IndexController'
 import PackageRouter  from './packageRouter';
+import SignUpController  from './../controller/signupController';
 
 export class IndexRouter {
   router: Router
@@ -19,6 +20,8 @@ export class IndexRouter {
    */
   init() {
     this.router.get('/', IndexController.get);
+    this.router.post('/signup',new SignUpController().signUpUser);
+    this.router.post('/authenticate',new SignUpController().authenticate);
     this.router.use('/api/v1/packages', PackageRouter);
   }
 
