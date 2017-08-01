@@ -2,6 +2,7 @@ import {Router, Request, Response, NextFunction} from 'express';
 import IndexController from './../controller/IndexController'
 import PackageRouter  from './packageRouter';
 import SignUpController  from './../controller/signupController';
+import * as Passport from 'passport'
 
 export class IndexRouter {
   router: Router
@@ -22,6 +23,7 @@ export class IndexRouter {
     this.router.get('/', IndexController.get);
     this.router.post('/signup',new SignUpController().signUpUser);
     this.router.post('/authenticate',new SignUpController().authenticate);
+    this.router.get('/memberinfo', Passport.authenticate('jwt', { session: false}),new SignUpController().memberInfo);
     this.router.use('/api/v1/packages', PackageRouter);
   }
 

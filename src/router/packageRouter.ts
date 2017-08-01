@@ -13,8 +13,8 @@ export class PackageRouter {
   }
 
   init() {
-    this.router.get('/AddToDB', this.controller.AddToDB);// this is to add the data in mongo db
     this.router.get('/', this.controller.get);
+    this.router.get('/AddToDB', this.controller.AddToDB);// this is to add the data in mongo db
     this.router.get('/:id', this.controller.getById);
   }
 }
