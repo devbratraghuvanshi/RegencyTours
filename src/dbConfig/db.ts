@@ -11,7 +11,8 @@ export class DB {
     this.init();
   }
   init() {
-    this.db.connect(this.dbURI);
+    this.db.Promise = global.Promise;
+    this.db.connect(this.dbURI,{ useMongoClient: true });
     // CONNECTION EVENTS
     // When successfully connected
     this.db.connection.on('connected', this.OnConnected);

@@ -1,15 +1,16 @@
 import * as Passport from 'passport';
 import { Strategy, ExtractJwt } from 'passport-jwt';
-import User from './../models/user'
+import { jWtSecret} from './../utility/utility'
+import UserCredential from './../models/userCredential'
 
 export class PassportAuth {
     constructor() {
         var strategy = new Strategy(
-            { secretOrKey: "MyS3cr3tK3Y", jwtFromRequest: ExtractJwt.fromAuthHeader() }, // pass secretOrKey: "MyS3cr3tK3Y" from config file
+            { secretOrKey: jWtSecret, jwtFromRequest: ExtractJwt.fromAuthHeader() }, // pass secretOrKey: "MyS3cr3tK3Y" from config file
             (jwt_payload, done) => {
-                User.findOne({ id: jwt_payload.id }, (err, user) => {
-                    if (user) {
-                        return done(null, { id: user.id });
+                UserCredential.findOne({ userId: jwt_payload.userId }, (err, credential) => {
+                    if (credential) {
+                        return done(null, { userId: credential.userId });
                     } else {
                         return done(new Error("User not found"), null);
                     }

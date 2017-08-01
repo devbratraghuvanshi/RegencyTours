@@ -1,6 +1,6 @@
 import  * as jwt from 'jwt-simple'
 
-export var jWtSecret = "MyS3cr3tK3Y";
+export const jWtSecret = "MyS3cr3tK3Y";
 
 export var jwtEncode  = function (data:any) {
     return jwt.encode(data, jWtSecret);

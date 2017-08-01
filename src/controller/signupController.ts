@@ -1,6 +1,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
-import User from './../models/user'; 
 import * as utility from "./../utility/utility"
+import User from './../models/user';
+import UserCredential from './../models/userCredential';
 
 
 export class SignUpController {
@@ -10,20 +11,29 @@ export class SignUpController {
     if (!req.body.userId || !req.body.password) {
       res.json({ success: false, msg: 'Please pass user ID and password.' });
     } else {
+
+      // register user => save Id and Password
+      var newUserCredential = new UserCredential({
+        userId: req.body.userId,
+        password: req.body.password,
+      });
+
       var newUser = new User({
         name: req.body.name,
         userId: req.body.userId,
-        password: req.body.password,
         mobile: req.body.mobile,
         email: req.body.email
       });
-      // save the user
-      newUser.save(function (err) {
-        if (err) {
-          return res.json({ success: false, msg: 'Username already exists.' });
-        }
+
+      newUserCredential.save().then( () => {
+         // save the user in user table
+        return newUser.save();
+      }).then(() => {
         res.json({ success: true, msg: 'Successful created new user.' });
+      },(err) => {
+         return res.json({ success: false, msg: 'Username already exists.' });
       });
+
     }
   }
 
@@ -32,19 +42,18 @@ export class SignUpController {
     if (!req.body.userId || !req.body.password) {
       res.json({ success: false, msg: 'Please pass user ID and password.' });
     } else {
-      User.findOne({
+      UserCredential.findOne({
         userId: req.body.userId
-      }, function (err, user) {
+      }, function (err, userCredential) {
         if (err) throw err;
-
-        if (!user) {
+        if (!userCredential) {
           res.send({ success: false, msg: 'Authentication failed. User not found.' });
         } else {
           // check if password matches
-          user.comparePassword(req.body.password, function (err, isMatch) {
+          userCredential.comparePassword(req.body.password, function (err, isMatch) {
             if (isMatch && !err) {
               // if user is found and password is right create a token
-              var token = utility.jwtEncode(user);
+              var token = utility.jwtEncode(userCredential);
               // return the information including token as JSON
               res.json({ success: true, token: 'JWT ' + token });
             } else {
@@ -56,26 +65,25 @@ export class SignUpController {
     }
   }
 
-  public memberInfo(req: Request, res: Response, next: NextFunction)
-  {
-      var token = utility.getToken(req.headers);
-  if (token) {
-    var decoded = utility.jwtDecode(token);
-    User.findOne({
-      name: decoded.name
-    }, function(err, user) {
+  public memberInfo(req: Request, res: Response, next: NextFunction) {
+    var token = utility.getToken(req.headers);
+    if (token) {
+      var decoded = utility.jwtDecode(token);
+      User.findOne({
+        userId: decoded.userId
+      }, function (err, user) {
         if (err) throw err;
- 
-        if (!user) {
-          return res.status(403).send({success: false, msg: 'Authentication failed. User not found.'});
-        } else {
-          res.json({success: true, msg: 'Welcome in the member area ' + user.name + '!', user :user});
-        }
-    });
 
-  } else {
-    return res.status(403).send({success: false, msg: 'No token provided.'});
-  }
+        if (!user) {
+          return res.status(403).send({ success: false, msg: 'Authentication failed. User not found.' });
+        } else {
+          res.json({ success: true, msg: 'Welcome in the member area ' + user.name + '!', user: user });
+        }
+      });
+
+    } else {
+      return res.status(403).send({ success: false, msg: 'No token provided.' });
+    }
 
 
   }
