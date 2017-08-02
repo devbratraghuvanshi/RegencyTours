@@ -1,5 +1,5 @@
 import * as bcrypt from 'bcrypt';
-import { Document, Schema, model } from 'mongoose';
+import { Document, Schema,Model, model } from 'mongoose';
 import * as  UserCredential from './userCredential'
 
 // User Interface 
@@ -56,5 +56,5 @@ UserSchema.pre('save', function(next) {
 });
 
 
-const User = model<IUserModel>('User', UserSchema);
-export default User;
+export const UserModel = model<IUserModel>('User', UserSchema);
+// export default User;

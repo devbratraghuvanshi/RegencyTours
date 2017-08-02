@@ -1,8 +1,12 @@
+
 import {Router, Request, Response, NextFunction} from 'express';
-import IndexController from './../controller/IndexController'
-import PackageRouter  from './packageRouter';
-import SignUpController  from './../controller/signupController';
 import * as Passport from 'passport'
+
+import IndexController from './../controller/IndexController'
+import SignUpController  from './../controller/signupController';
+
+import  PackageRouter   from './packageRouter';
+import  UserRouter  from './userRouter';
 
 export class IndexRouter {
   router: Router
@@ -23,8 +27,9 @@ export class IndexRouter {
     this.router.get('/', IndexController.get);
     this.router.post('/signup',new SignUpController().signUpUser);
     this.router.post('/authenticate',new SignUpController().authenticate);
-    this.router.get('/memberinfo', Passport.authenticate('jwt', { session: false}),new SignUpController().memberInfo);
+  //  this.router.get('/memberinfo', Passport.authenticate('jwt', { session: false}),new SignUpController().memberInfo);
     this.router.use('/api/v1/packages', PackageRouter);
+    this.router.use('/api/v1/user',Passport.authenticate('jwt', { session: false}), UserRouter);
   }
 
 }

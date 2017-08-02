@@ -1,6 +1,6 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import * as utility from "./../utility/utility"
-import User from './../models/user';
+import { UserModel } from './../models/user';
 import UserCredential from './../models/userCredential';
 
 
@@ -18,7 +18,7 @@ export class SignUpController {
         password: req.body.password,
       });
 
-      var newUser = new User({
+      var newUser = new UserModel({
         name: req.body.name,
         userId: req.body.userId,
         mobile: req.body.mobile,
@@ -69,7 +69,7 @@ export class SignUpController {
     var token = utility.getToken(req.headers);
     if (token) {
       var decoded = utility.jwtDecode(token);
-      User.findOne({
+      UserModel.findOne({
         userId: decoded.userId
       }, function (err, user) {
         if (err) throw err;
