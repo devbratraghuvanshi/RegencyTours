@@ -13,10 +13,15 @@ export class UserRouter{
     }
 
     init() {
-    this.router.get('/',this.controller.get);
-    this.router.get('/:id',this.controller.getById);
-    this.router.put('/', ()=>{});
-    this.router.patch('/', ()=>{});
+    this.router.route('/')
+    .get(this.controller.get)
+    .post(this.controller.add)
+    delete(this.controller.delete);
+
+    this.router.route('/:id')
+    .get(this.controller.getById)
+    .put(this.controller.update)
+    .patch(this.controller.patch);
   }
 
 }
