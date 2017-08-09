@@ -2,14 +2,14 @@ import  * as jwt from 'jwt-simple'
 
 export const jWtSecret = "MyS3cr3tK3Y";
 
-export var jwtEncode  = function (data:any) {
+export const jwtEncode  = function (data:any) {
     return jwt.encode(data, jWtSecret);
 };
-export var jwtDecode  = function (data:any) {
+export const jwtDecode  = function (data:any) {
      return jwt.decode(data, jWtSecret);
 };
 
-export var getToken  = function (headers) {
+export const getToken  = function (headers) {
   if (headers && headers.authorization) {
     var parted = headers.authorization.split(' ');
     if (parted.length === 2) {
@@ -21,3 +21,5 @@ export var getToken  = function (headers) {
     return null;
   }
 };
+
+
