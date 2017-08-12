@@ -4,7 +4,8 @@ import * as  UserCredential from './userCredential'
 
 // User Interface 
 export interface IUserModel extends Document {
-    name: string;
+    firstName: string;
+    lastName: string;
     userId: string;
     email: String;
     mobile: String;
@@ -12,10 +13,13 @@ export interface IUserModel extends Document {
     modifiedAt: Date;
 };
 
-
 //User Schema
 export const UserSchema = new Schema({
-    name: {
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
         type: String,
         required: true
     },

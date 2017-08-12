@@ -77,7 +77,7 @@ export class SignUpController {
         if (!user) {
           return res.status(403).send({ success: false, msg: 'Authentication failed. User not found.' });
         } else {
-          res.json({ success: true, msg: 'Welcome in the member area ' + user.name + '!', user: user });
+          res.json({ success: true, msg: 'Welcome in the member area ' + user.firstName + " " + user.lastName + '!', user: user });
         }
       });
 

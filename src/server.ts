@@ -14,6 +14,7 @@ public Port:any;
          Server.listen(this.Port);
          Server.on('error', this.onError);
          Server.on('listening', this.onListening);
+          Server.on('uncaughtException', this.onUnCaughtException);
     }
 
     normalizePort(val: number | string): number | string | boolean {
@@ -43,6 +44,10 @@ public Port:any;
         let addr = Server.address()
         let bind = (typeof addr === 'string') ? `pipe ${addr}` : `port ${addr.port}`;
         Debug(`Listening on ${bind}`);
+    }
+    onUnCaughtException(err:any): void {
+            console.log( "UNCAUGHT EXCEPTION " );
+            console.log( "[Inside 'uncaughtException' event] " + err.stack || err.message );
     }
 
 }

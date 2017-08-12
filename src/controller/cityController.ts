@@ -1,33 +1,32 @@
 import { Request, Response } from 'express';
 import { Model } from 'mongoose';
-import { UserModel } from './../models/user';
-export class UserController {
+import { CityModel } from './../models/city';
+export class CityController {
 
     public add(req: Request, res: Response) {
-        let newUser = new UserModel(req.body);
-        newUser.save().then((user) => {
+        let newCity = new CityModel(req.body);
+        newCity.save().then((city) => {
             res.status(200);
-            res.send(user);
+            res.send(city);
         }).catch((err) => {
             res.status(500);
             res.send("internal server error");
         });
     }
-
     public get(req: Request, res: Response) {
-        UserModel.find((err, users) => {
+        CityModel.find((err, cities) => {
             if (err) {
                 res.status(500);
                 res.send("internal server error");
             } else {
                 res.status(200);
-                res.send(users);
+                res.send(cities);
             }
         })
     }
 
     public getById(req: Request, res: Response) {
-        UserModel.findById(req.params.id, (err, users) => {
+        CityModel.findById(req.params.id, (err, users) => {
             if (err) {
                 res.status(500);
                 res.send("internal server error");
@@ -39,12 +38,13 @@ export class UserController {
     }
 
     public update(req: Request, res: Response) {
-        UserModel.findById(req.params.id).then((user) => {
-            user.firstName = req.body.firstName;
-            user.lastName = req.body.lastName;
-            user.email = req.body.email;
-            user.mobile = req.body.mobile;
-            return user.save();
+        CityModel.findById(req.params.id).then((city) => {
+            city.cityName = req.body.cityName;
+            city.cityCode = req.body.cityCode;
+            city.state = req.body.state;
+            city.lon = req.body.lon;
+            city.lat = req.body.lat;
+            return city.save();
         }).then((user) => {
             res.status(200);
             res.send(user);
@@ -55,7 +55,7 @@ export class UserController {
     }
 
     public patch(req: Request, res: Response) {
-        UserModel.findById(req.params.id).then((user) => {
+        CityModel.findById(req.params.id).then((user) => {
             for (var key in req.body) {
                 user[key] = req.body[key];
             }
@@ -70,7 +70,7 @@ export class UserController {
     }
 
     public delete(req: Request, res: Response) {
-        UserModel.findByIdAndRemove(req.params.id).then(() => {
+        CityModel.findByIdAndRemove(req.params.id).then(() => {
             res.status(204);
             res.send("user removed");
         }).catch((err) => {
@@ -78,4 +78,22 @@ export class UserController {
             res.send(err);
         });
     }
-} 
+
+    public search(req: Request, res: Response) {
+        let regEx = new RegExp(req.params.searchStr, 'i');
+        CityModel.find({
+            '$or': [
+                { cityName: regEx },
+                { cityCode: regEx }
+            ]
+        }, (err, users) => {
+            if (err) {
+                res.status(500);
+                res.send("internal server error");
+            } else {
+                res.status(200);
+                res.send(users);
+            }
+        })
+    }
+}

@@ -8,6 +8,7 @@ import SignUpController  from './../controller/signupController';
 import  PackageRouter   from './packageRouter';
 import  UserRouter  from './userRouter';
 import  ImageRouter  from './imageRouter';
+import  CityRouter  from './cityRouter';
 
 export class IndexRouter {
   router: Router
@@ -32,6 +33,7 @@ export class IndexRouter {
     this.router.use('/api/v1/packages', PackageRouter);
     this.router.use('/api/v1/user',Passport.authenticate('jwt', { session: false}), UserRouter);
     this.router.use('/api/v1/image', ImageRouter);
+    this.router.use('/api/v1/city', CityRouter);
   }
 
 }

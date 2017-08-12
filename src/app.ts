@@ -28,15 +28,23 @@ class App {
     this.express.use(BodyParser.json());
     this.express.use(BodyParser.urlencoded({ extended: false }));
     this.express.use(passportAuth.initialize());
+    this.express.use(this.clientErrorHandler);
   }
 
   // Configure API endpoints.
   private routes(): void {
-    this.express.use('/',indexRouter);
+    this.express.use('/', indexRouter);
   }
   // Configure API endpoints.
   private initDb(): void {
-    var db  = new DB(Mongoose);
+    var db = new DB(Mongoose);
+  }
+  private clientErrorHandler(err, req, res, next): void {
+    if (req.xhr) {
+      res.status(500).send({ error: 'Something failed!' })
+    } else {
+      next(err)
+    }
   }
 }
 

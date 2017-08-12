@@ -1,0 +1,1402 @@
+[
+    {
+        "cityName": "Mumbai",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "18.975",
+        "lon": "72.825833"
+    },
+    {
+        "cityName": "Delhi",
+        "cityCode": "NA",
+        "state": "Delhi",
+        "lat": "28.666667",
+        "lon": "77.216667"
+    },
+    {
+        "cityName": "Bangalore",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "12.983333",
+        "lon": "77.583333"
+    },
+    {
+        "cityName": "Hyderabad",
+        "cityCode": "NA",
+        "state": "Telangana",
+        "lat": "17.375278",
+        "lon": "78.474444"
+    },
+    {
+        "cityName": "Ahmedabad",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "23.033333",
+        "lon": "72.616667"
+    },
+    {
+        "cityName": "Chennai",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "13.083333",
+        "lon": "80.283333"
+    },
+    {
+        "cityName": "Kolkata",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.569722",
+        "lon": "88.369722"
+    },
+    {
+        "cityName": "Surat",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "20.966667",
+        "lon": "72.9"
+    },
+    {
+        "cityName": "Pune",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "18.533333",
+        "lon": "73.866667"
+    },
+    {
+        "cityName": "Jaipur",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "24.583333",
+        "lon": "86.85"
+    },
+    {
+        "cityName": "Lucknow",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "26.85",
+        "lon": "80.916667"
+    },
+    {
+        "cityName": "Kanpur",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "26.466667",
+        "lon": "80.35"
+    },
+    {
+        "cityName": "Nagpur",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "23.3",
+        "lon": "82.3"
+    },
+    {
+        "cityName": "Indore",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "22.716667",
+        "lon": "75.833333"
+    },
+    {
+        "cityName": "Thane",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.2",
+        "lon": "72.966667"
+    },
+    {
+        "cityName": "Bhopal",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "23.266667",
+        "lon": "77.4"
+    },
+    {
+        "cityName": "Visakhapatnam",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "17.7",
+        "lon": "83.3"
+    },
+    {
+        "cityName": "Pimpri-Chinchwad",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "18.6279288",
+        "lon": "73.8009829"
+    },
+    {
+        "cityName": "Patna",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "23.3",
+        "lon": "82.666667"
+    },
+    {
+        "cityName": "Vadodara",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "22.3",
+        "lon": "73.2"
+    },
+    {
+        "cityName": "Ghaziabad",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.666667",
+        "lon": "77.433333"
+    },
+    {
+        "cityName": "Ludhiana",
+        "cityCode": "NA",
+        "state": "Punjab",
+        "lat": "30.9",
+        "lon": "75.85"
+    },
+    {
+        "cityName": "Agra",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "27.183333",
+        "lon": "78.016667"
+    },
+    {
+        "cityName": "Nashik",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "20.0110224",
+        "lon": "73.7903373"
+    },
+    {
+        "cityName": "Faridabad",
+        "cityCode": "NA",
+        "state": "Haryana",
+        "lat": "28.433333",
+        "lon": "77.316667"
+    },
+    {
+        "cityName": "Meerut",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.983333",
+        "lon": "77.7"
+    },
+    {
+        "cityName": "Rajkot",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "25.731111",
+        "lon": "75.5925"
+    },
+    {
+        "cityName": "Kalyan-Dombivali",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.235433",
+        "lon": "73.129889"
+    },
+    {
+        "cityName": "Vasai-Virar",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.4258788",
+        "lon": "72.8224901"
+    },
+    {
+        "cityName": "Varanasi",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "25.333333",
+        "lon": "83"
+    },
+    {
+        "cityName": "Srinagar",
+        "cityCode": "NA",
+        "state": "Jammu and Kashmir",
+        "lat": "30.216667",
+        "lon": "78.783333"
+    },
+    {
+        "cityName": "Aurangabad",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "26.596",
+        "lon": "79.9701"
+    },
+    {
+        "cityName": "Dhanbad",
+        "cityCode": "NA",
+        "state": "Jharkhand",
+        "lat": "23.8",
+        "lon": "86.45"
+    },
+    {
+        "cityName": "Amritsar",
+        "cityCode": "NA",
+        "state": "Punjab",
+        "lat": "31.633056",
+        "lon": "74.865556"
+    },
+    {
+        "cityName": "Navi Mumbai",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.033049",
+        "lon": "73.029662"
+    },
+    {
+        "cityName": "Allahabad",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "25.45",
+        "lon": "81.85"
+    },
+    {
+        "cityName": "Ranchi",
+        "cityCode": "NA",
+        "state": "Jharkhand",
+        "lat": "23.35",
+        "lon": "85.333333"
+    },
+    {
+        "cityName": "Howrah",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.589167",
+        "lon": "88.310278"
+    },
+    {
+        "cityName": "Coimbatore",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "10.9925",
+        "lon": "76.961389"
+    },
+    {
+        "cityName": "Jabalpur",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "23.166667",
+        "lon": "79.95"
+    },
+    {
+        "cityName": "Gwalior",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "26.223611",
+        "lon": "78.179167"
+    },
+    {
+        "cityName": "Vijayawada",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "16.516667",
+        "lon": "80.616667"
+    },
+    {
+        "cityName": "Jodhpur",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "26.286667",
+        "lon": "73.03"
+    },
+    {
+        "cityName": "Madurai",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "9.933333",
+        "lon": "78.116667"
+    },
+    {
+        "cityName": "Raipur",
+        "cityCode": "NA",
+        "state": "Chhattisgarh",
+        "lat": "30.316667",
+        "lon": "78.1"
+    },
+    {
+        "cityName": "Kota",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "29.825278",
+        "lon": "78.671389"
+    },
+    {
+        "cityName": "Guwahati",
+        "cityCode": "NA",
+        "state": "Assam",
+        "lat": "26.183333",
+        "lon": "91.733333"
+    },
+    {
+        "cityName": "Chandigarh",
+        "cityCode": "NA",
+        "state": "Chandigarh",
+        "lat": "30.7343",
+        "lon": "76.7933"
+    },
+    {
+        "cityName": "Solapur",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "17.683333",
+        "lon": "75.916667"
+    },
+    {
+        "cityName": "Hubballi-Dharwad",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "15.364708",
+        "lon": "75.123955"
+    },
+    {
+        "cityName": "Bareilly",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.35",
+        "lon": "79.416667"
+    },
+    {
+        "cityName": "Moradabad",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.833333",
+        "lon": "78.783333"
+    },
+    {
+        "cityName": "Mysore",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "12.307222",
+        "lon": "76.649722"
+    },
+    {
+        "cityName": "Gurgaon",
+        "cityCode": "NA",
+        "state": "Haryana",
+        "lat": "27.6928",
+        "lon": "79.6766"
+    },
+    {
+        "cityName": "Aligarh",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "27.883333",
+        "lon": "78.083333"
+    },
+    {
+        "cityName": "Jalandhar",
+        "cityCode": "NA",
+        "state": "Punjab",
+        "lat": "23.9",
+        "lon": "78.433333"
+    },
+    {
+        "cityName": "Tiruchirappalli",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "10.805",
+        "lon": "78.685556"
+    },
+    {
+        "cityName": "Bhubaneswar",
+        "cityCode": "NA",
+        "state": "Orissa",
+        "lat": "20.233333",
+        "lon": "85.833333"
+    },
+    {
+        "cityName": "Salem",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "15.7",
+        "lon": "73.916667"
+    },
+    {
+        "cityName": "Mira-Bhayandar",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.295233",
+        "lon": "72.854390\t"
+    },
+    {
+        "cityName": "Warangal",
+        "cityCode": "NA",
+        "state": "Telangana",
+        "lat": "18",
+        "lon": "79.583333"
+    },
+    {
+        "cityName": "Thiruvananthapuram",
+        "cityCode": "NA",
+        "state": "Kerala",
+        "lat": "8.506944",
+        "lon": "76.956944"
+    },
+    {
+        "cityName": "Guntur",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "16.3",
+        "lon": "80.45"
+    },
+    {
+        "cityName": "Bhiwandi",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.3",
+        "lon": "73.066667"
+    },
+    {
+        "cityName": "Saharanpur",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "29.966667",
+        "lon": "77.55"
+    },
+    {
+        "cityName": "Gorakhpur",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "26.755",
+        "lon": "83.373889"
+    },
+    {
+        "cityName": "Bikaner",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "28.016667",
+        "lon": "73.3"
+    },
+    {
+        "cityName": "Amravati",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "20.933333",
+        "lon": "77.75"
+    },
+    {
+        "cityName": "Noida",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.5726442",
+        "lon": "77.3547609"
+    },
+    {
+        "cityName": "Jamshedpur",
+        "cityCode": "NA",
+        "state": "Jharkhand",
+        "lat": "22.8",
+        "lon": "86.183333"
+    },
+    {
+        "cityName": "Bhilai",
+        "cityCode": "NA",
+        "state": "Chhattisgarh",
+        "lat": "21.216667",
+        "lon": "81.433333"
+    },
+    {
+        "cityName": "Cuttack",
+        "cityCode": "NA",
+        "state": "Orissa",
+        "lat": "20.5",
+        "lon": "85.833333"
+    },
+    {
+        "cityName": "Firozabad",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "27.15",
+        "lon": "78.416667"
+    },
+    {
+        "cityName": "Kochi",
+        "cityCode": "NA",
+        "state": "Kerala",
+        "lat": "9.966667",
+        "lon": "76.233333"
+    },
+    {
+        "cityName": "Bhavnagar",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "21.766667",
+        "lon": "72.15"
+    },
+    {
+        "cityName": "Dehradun",
+        "cityCode": "NA",
+        "state": "Uttarakhand",
+        "lat": "30.3255646",
+        "lon": "78.0436813"
+    },
+    {
+        "cityName": "Durgapur",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "24.75",
+        "lon": "87.733333"
+    },
+    {
+        "cityName": "Asansol",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "24.233333",
+        "lon": "87.283333"
+    },
+    {
+        "cityName": "Nanded",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.15",
+        "lon": "77.333333"
+    },
+    {
+        "cityName": "Kolhapur",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "16.7",
+        "lon": "74.216667"
+    },
+    {
+        "cityName": "Ajmer",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "26.45",
+        "lon": "74.633333"
+    },
+    {
+        "cityName": "Gulbarga",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "17.333333",
+        "lon": "76.833333"
+    },
+    {
+        "cityName": "Jamnagar",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "22.466667",
+        "lon": "70.066667"
+    },
+    {
+        "cityName": "Ujjain",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "23.183333",
+        "lon": "75.766667"
+    },
+    {
+        "cityName": "Loni",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.75",
+        "lon": "77.283333"
+    },
+    {
+        "cityName": "Siliguri",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "26.716111",
+        "lon": "88.423611"
+    },
+    {
+        "cityName": "Jhansi",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "25.433333",
+        "lon": "78.583333"
+    },
+    {
+        "cityName": "Ulhasnagar",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.216667",
+        "lon": "73.15"
+    },
+    {
+        "cityName": "Nellore",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "14.433333",
+        "lon": "79.966667"
+    },
+    {
+        "cityName": "Jammu",
+        "cityCode": "NA",
+        "state": "Jammu and Kashmir",
+        "lat": "32.733333",
+        "lon": "74.866667"
+    },
+    {
+        "cityName": "Sangli-Miraj & Kupwad",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "16.860446",
+        "lon": "74.565518"
+    },
+    {
+        "cityName": "Belgaum",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "15.866667",
+        "lon": "74.5"
+    },
+    {
+        "cityName": "Mangalore",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "12.863889",
+        "lon": "74.835278"
+    },
+    {
+        "cityName": "Ambattur",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "13.076667",
+        "lon": "80.088611"
+    },
+    {
+        "cityName": "Tirunelveli",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "8.733333",
+        "lon": "77.7"
+    },
+    {
+        "cityName": "Malegaon",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "20.55",
+        "lon": "74.533333"
+    },
+    {
+        "cityName": "Gaya",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "24.783333",
+        "lon": "85"
+    },
+    {
+        "cityName": "Jalgaon",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "21.048611",
+        "lon": "76.534444"
+    },
+    {
+        "cityName": "Udaipur",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "26.6978",
+        "lon": "79.9216"
+    },
+    {
+        "cityName": "Maheshtala",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.508621",
+        "lon": "88.2532182"
+    },
+    {
+        "cityName": "Tirupur",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "11.1",
+        "lon": "77.35"
+    },
+    {
+        "cityName": "Davanagere",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "14.4596984",
+        "lon": "75.9289654951128"
+    },
+    {
+        "cityName": "Kozhikode",
+        "cityCode": "NA",
+        "state": "Kerala",
+        "lat": "11.25",
+        "lon": "75.766667"
+    },
+    {
+        "cityName": "Akola",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "24.766667",
+        "lon": "74.2"
+    },
+    {
+        "cityName": "Kurnool",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "15.833333",
+        "lon": "78.05"
+    },
+    {
+        "cityName": "Rajpur Sonarpur",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.449089",
+        "lon": "88.391473"
+    },
+    {
+        "cityName": "Bokaro",
+        "cityCode": "NA",
+        "state": "Jharkhand",
+        "lat": "23.783333",
+        "lon": "85.966667"
+    },
+    {
+        "cityName": "South Dumdum",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.610000",
+        "lon": "88.400000"
+    },
+    {
+        "cityName": "Bellary",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "15.15",
+        "lon": "76.933333"
+    },
+    {
+        "cityName": "Patiala",
+        "cityCode": "NA",
+        "state": "Punjab",
+        "lat": "30.326667",
+        "lon": "76.400278"
+    },
+    {
+        "cityName": "Gopalpur",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "24.833333",
+        "lon": "87.8"
+    },
+    {
+        "cityName": "Agartala",
+        "cityCode": "NA",
+        "state": "Tripura",
+        "lat": "23.836389",
+        "lon": "91.275"
+    },
+    {
+        "cityName": "Bhagalpur",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "26.169722",
+        "lon": "83.872778"
+    },
+    {
+        "cityName": "Muzaffarnagar",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "29.466667",
+        "lon": "77.683333"
+    },
+    {
+        "cityName": "Bhatpara",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.871389",
+        "lon": "88.408889"
+    },
+    {
+        "cityName": "Panihati",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.694167",
+        "lon": "88.374444"
+    },
+    {
+        "cityName": "Latur",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "18.4",
+        "lon": "76.583333"
+    },
+    {
+        "cityName": "Dhule",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "20.9",
+        "lon": "74.783333"
+    },
+    {
+        "cityName": "Rohtak",
+        "cityCode": "NA",
+        "state": "Haryana",
+        "lat": "28.9",
+        "lon": "76.566667"
+    },
+    {
+        "cityName": "Korba",
+        "cityCode": "NA",
+        "state": "Chhattisgarh",
+        "lat": "22.35",
+        "lon": "82.683333"
+    },
+    {
+        "cityName": "Bhilwara",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "25.35",
+        "lon": "74.633333"
+    },
+    {
+        "cityName": "Brahmapur",
+        "cityCode": "NA",
+        "state": "Orissa",
+        "lat": "19.316667",
+        "lon": "84.783333"
+    },
+    {
+        "cityName": "Muzaffarpur",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "26.116667",
+        "lon": "85.4"
+    },
+    {
+        "cityName": "Ahmednagar",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.083333",
+        "lon": "74.733333"
+    },
+    {
+        "cityName": "Mathura",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "27.5",
+        "lon": "77.683333"
+    },
+    {
+        "cityName": "Kollam",
+        "cityCode": "NA",
+        "state": "Kerala",
+        "lat": "8.880556",
+        "lon": "76.591667"
+    },
+    {
+        "cityName": "Avadi",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "13.115556",
+        "lon": "80.101667"
+    },
+    {
+        "cityName": "Rajahmundry",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "16.983333",
+        "lon": "81.783333"
+    },
+    {
+        "cityName": "Kadapa",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "14.466667",
+        "lon": "78.816667"
+    },
+    {
+        "cityName": "Kamarhati",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.671111",
+        "lon": "88.374722"
+    },
+    {
+        "cityName": "Bilaspur",
+        "cityCode": "NA",
+        "state": "Chhattisgarh",
+        "lat": "22.083333",
+        "lon": "82.15"
+    },
+    {
+        "cityName": "Shahjahanpur",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "27.883333",
+        "lon": "79.916667"
+    },
+    {
+        "cityName": "Bijapur",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "18.8",
+        "lon": "80.816667"
+    },
+    {
+        "cityName": "Rampur",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "23.283333",
+        "lon": "85.433333"
+    },
+    {
+        "cityName": "Shivamogga (Shimoga)",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "13.929930",
+        "lon": "75.568101"
+    },
+    {
+        "cityName": "Chandrapur",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.6",
+        "lon": "83.883333"
+    },
+    {
+        "cityName": "Junagadh",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "21.516667",
+        "lon": "70.466667"
+    },
+    {
+        "cityName": "Thrissur",
+        "cityCode": "NA",
+        "state": "Kerala",
+        "lat": "10.516667",
+        "lon": "76.216667"
+    },
+    {
+        "cityName": "Alwar",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "27.566667",
+        "lon": "76.6"
+    },
+    {
+        "cityName": "Bardhaman",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "23.240556",
+        "lon": "87.869444"
+    },
+    {
+        "cityName": "Kulti",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "23.733333",
+        "lon": "86.85"
+    },
+    {
+        "cityName": "Kakinada",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "16.933333",
+        "lon": "82.216667"
+    },
+    {
+        "cityName": "Nizamabad",
+        "cityCode": "NA",
+        "state": "Telangana",
+        "lat": "26.050556",
+        "lon": "83.058889"
+    },
+    {
+        "cityName": "Parbhani",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.266667",
+        "lon": "76.783333"
+    },
+    {
+        "cityName": "Tumkur",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "13.342222",
+        "lon": "77.101667"
+    },
+    {
+        "cityName": "Hisar",
+        "cityCode": "NA",
+        "state": "Haryana",
+        "lat": "29.166667",
+        "lon": "75.716667"
+    },
+    {
+        "cityName": "Ozhukarai",
+        "cityCode": "NA",
+        "state": "Puducherry",
+        "lat": "11.948880",
+        "lon": "79.712141"
+    },
+    {
+        "cityName": "Bihar Sharif",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "25.183333",
+        "lon": "85.516667"
+    },
+    {
+        "cityName": "Panipat",
+        "cityCode": "NA",
+        "state": "Haryana",
+        "lat": "29.388889",
+        "lon": "76.968056"
+    },
+    {
+        "cityName": "Darbhanga",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "26.166667",
+        "lon": "85.9"
+    },
+    {
+        "cityName": "Bally",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "15.166667",
+        "lon": "74.033333"
+    },
+    {
+        "cityName": "Aizawl",
+        "cityCode": "NA",
+        "state": "Mizoram",
+        "lat": "23.724444",
+        "lon": "92.7175"
+    },
+    {
+        "cityName": "Dewas",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "22.966667",
+        "lon": "76.066667"
+    },
+    {
+        "cityName": "Ichalkaranji",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "16.7",
+        "lon": "74.466667"
+    },
+    {
+        "cityName": "Tirupati",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "13.65",
+        "lon": "79.416667"
+    },
+    {
+        "cityName": "Karnal",
+        "cityCode": "NA",
+        "state": "Haryana",
+        "lat": "29.683333",
+        "lon": "76.983333"
+    },
+    {
+        "cityName": "Bathinda",
+        "cityCode": "NA",
+        "state": "Punjab",
+        "lat": "30.2081076",
+        "lon": "74.9485371"
+    },
+    {
+        "cityName": "Jalna",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "24.0988",
+        "lon": "79.2137"
+    },
+    {
+        "cityName": "Barasat",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.684167",
+        "lon": "88.441111"
+    },
+    {
+        "cityName": "Kirari Suleman Nagar",
+        "cityCode": "NA",
+        "state": "Delhi",
+        "lat": "28.701638",
+        "lon": "77.047811"
+    },
+    {
+        "cityName": "Purnia",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "24.516667",
+        "lon": "87.133333"
+    },
+    {
+        "cityName": "Satna",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "24.583333",
+        "lon": "80.833333"
+    },
+    {
+        "cityName": "Mau",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "25.941667",
+        "lon": "83.561111"
+    },
+    {
+        "cityName": "Sonipat",
+        "cityCode": "NA",
+        "state": "Haryana",
+        "lat": "28.983333",
+        "lon": "77.016667"
+    },
+    {
+        "cityName": "Farrukhabad",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "27.4",
+        "lon": "79.566667"
+    },
+    {
+        "cityName": "Sagar",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "22.066667",
+        "lon": "82"
+    },
+    {
+        "cityName": "Rourkela",
+        "cityCode": "NA",
+        "state": "Orissa",
+        "lat": "22.2",
+        "lon": "84.883333"
+    },
+    {
+        "cityName": "Durg",
+        "cityCode": "NA",
+        "state": "Chhattisgarh",
+        "lat": "21.183333",
+        "lon": "81.283333"
+    },
+    {
+        "cityName": "Imphal",
+        "cityCode": "NA",
+        "state": "Manipur",
+        "lat": "24.816667",
+        "lon": "93.95"
+    },
+    {
+        "cityName": "Ratlam",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "23.316667",
+        "lon": "75.066667"
+    },
+    {
+        "cityName": "Hapur",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.716667",
+        "lon": "77.783333"
+    },
+    {
+        "cityName": "Anantapur",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "26.829",
+        "lon": "79.5342"
+    },
+    {
+        "cityName": "Arrah",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "25.566667",
+        "lon": "84.666667"
+    },
+    {
+        "cityName": "Karimnagar",
+        "cityCode": "NA",
+        "state": "Telangana",
+        "lat": "27.7974",
+        "lon": "79.2581"
+    },
+    {
+        "cityName": "Etawah",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "26.7769",
+        "lon": "79.0239"
+    },
+    {
+        "cityName": "Ambernath",
+        "cityCode": "NA",
+        "state": "Maharashtra",
+        "lat": "19.2015607",
+        "lon": "73.2004771"
+    },
+    {
+        "cityName": "North Dumdum",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.652080",
+        "lon": "88.419070"
+    },
+    {
+        "cityName": "Bharatpur",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "27.1268",
+        "lon": "79.3921"
+    },
+    {
+        "cityName": "Begusarai",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "25.416667",
+        "lon": "86.133333"
+    },
+    {
+        "cityName": "New Delhi",
+        "cityCode": "NA",
+        "state": "Delhi",
+        "lat": "28.6",
+        "lon": "77.2"
+    },
+    {
+        "cityName": "Gandhidham",
+        "cityCode": "NA",
+        "state": "Gujarat",
+        "lat": "23.083333",
+        "lon": "70.133333"
+    },
+    {
+        "cityName": "Baranagar",
+        "cityCode": "NA",
+        "state": "West Bengal",
+        "lat": "22.643333",
+        "lon": "88.365278"
+    },
+    {
+        "cityName": "Tiruvottiyur",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "13.157778",
+        "lon": "80.304167"
+    },
+    {
+        "cityName": "Puducherry",
+        "cityCode": "NA",
+        "state": "Puducherry",
+        "lat": "11.93",
+        "lon": "79.83"
+    },
+    {
+        "cityName": "Sikar",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "27.616667",
+        "lon": "75.15"
+    },
+    {
+        "cityName": "Thoothukudi",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "8.783333",
+        "lon": "78.133333"
+    },
+    {
+        "cityName": "Rewa",
+        "cityCode": "NA",
+        "state": "Madhya Pradesh",
+        "lat": "27.9161",
+        "lon": "79.0231"
+    },
+    {
+        "cityName": "Mirzapur",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "25.15",
+        "lon": "82.583333"
+    },
+    {
+        "cityName": "Raichur",
+        "cityCode": "NA",
+        "state": "Karnataka",
+        "lat": "16.2",
+        "lon": "77.366667"
+    },
+    {
+        "cityName": "Pali",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "29.85",
+        "lon": "78.543889"
+    },
+    {
+        "cityName": "Khammam",
+        "cityCode": "NA",
+        "state": "Telangana",
+        "lat": "17.25",
+        "lon": "80.15"
+    },
+    {
+        "cityName": "Vizianagaram",
+        "cityCode": "NA",
+        "state": "Andhra Pradesh",
+        "lat": "18.116667",
+        "lon": "83.416667"
+    },
+    {
+        "cityName": "Katihar",
+        "cityCode": "NA",
+        "state": "Bihar",
+        "lat": "25.533333",
+        "lon": "87.583333"
+    },
+    {
+        "cityName": "Haridwar",
+        "cityCode": "NA",
+        "state": "Uttarakhand",
+        "lat": "29.966667",
+        "lon": "78.166667"
+    },
+    {
+        "cityName": "Sri Ganganagar",
+        "cityCode": "NA",
+        "state": "Rajasthan",
+        "lat": "29.916667",
+        "lon": "73.883333"
+    },
+    {
+        "cityName": "Karawal Nagar",
+        "cityCode": "NA",
+        "state": "Delhi",
+        "lat": "28.728310",
+        "lon": "77.276926"
+    },
+    {
+        "cityName": "Nagercoil",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "8.193889",
+        "lon": "77.431389"
+    },
+    {
+        "cityName": "Mango",
+        "cityCode": "NA",
+        "state": "Jharkhand",
+        "lat": "13.22526165",
+        "lon": "79.1055442299247"
+    },
+    {
+        "cityName": "Bulandshahr",
+        "cityCode": "NA",
+        "state": "Uttar Pradesh",
+        "lat": "28.4",
+        "lon": "77.85"
+    },
+    {
+        "cityName": "Thanjavur",
+        "cityCode": "NA",
+        "state": "Tamil Nadu",
+        "lat": "10.8",
+        "lon": "79.15"
+    }
+]
