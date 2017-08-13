@@ -10,14 +10,14 @@ export class PackageCategoryController {
             res.send(category);
         }).catch((err) => {
             res.status(500);
-            res.send("internal server error");
+            res.send({ message: "internal server error", error: err });
         });
     }
     public get(req: Request, res: Response) {
         PackageCategoryModel.find((err, categories) => {
             if (err) {
                 res.status(500);
-                res.send("internal server error");
+                res.send({ message: "internal server error", error: err });
             } else {
                 res.status(200);
                 res.send(categories);
@@ -29,7 +29,7 @@ export class PackageCategoryController {
         PackageCategoryModel.findById(req.params.id, (err, category) => {
             if (err) {
                 res.status(500);
-                res.send("internal server error");
+                res.send({ message: "internal server error", error: err });
             } else {
                 res.status(200);
                 res.send(category);
@@ -49,7 +49,7 @@ export class PackageCategoryController {
             res.send(category);
         }).catch((err) => {
             res.status(500);
-            res.send(err);
+            res.send({ message: "internal server error", error: err });
         });
     }
 
@@ -64,17 +64,27 @@ export class PackageCategoryController {
             res.send(user);
         }).catch((err) => {
             res.status(500);
-            res.send(err);
+            res.send({ message: "internal server error", error: err });
         });
     }
 
     public delete(req: Request, res: Response) {
-        PackageCategoryModel.findByIdAndRemove(req.params.id).then(() => {
-            res.status(204);
-            res.send("user removed");
+        PackageCategoryModel.findById(req.params.id).then((category) => {
+            if (category) {
+                return category.remove();
+            } else {
+                return Promise.resolve(null) as Promise<any>;
+            }
+        }).then((removed) => {
+            res.status(200);
+            if (!removed) {
+                res.send({ message: 'resource not found with given ID', status: false });
+            } else {
+                res.send({ message: "resource deleted successfully", status: true, data: removed });
+            }
         }).catch((err) => {
             res.status(500);
-            res.send(err);
+            res.send({ message: "internal server error", status: false, err: err });
         });
     }
 
@@ -88,7 +98,7 @@ export class PackageCategoryController {
         }, (err, categories) => {
             if (err) {
                 res.status(500);
-                res.send("internal server error");
+                res.send({ message: "internal server error", error: err });
             } else {
                 res.status(200);
                 res.send(categories);

@@ -8,7 +8,7 @@ import SignUpController  from './../controller/signupController';
 import  PackageRouter   from './packageRouter';
 import  UserRouter  from './userRouter';
 import  ImageRouter  from './imageRouter';
-import  CityRouter  from './cityRouter';
+import  CityRouter  from '../cms/router/cityRouter';
 import  PackageCategoryRouter  from '../cms/router/packageCategoryRouter';
 
 export class IndexRouter {

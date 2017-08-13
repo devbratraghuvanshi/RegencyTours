@@ -10,7 +10,7 @@ export class UserController {
             res.send(user);
         }).catch((err) => {
             res.status(500);
-            res.send("internal server error");
+            res.send({ message: "internal server error", status: false, err: err });
         });
     }
 
@@ -18,7 +18,7 @@ export class UserController {
         UserModel.find((err, users) => {
             if (err) {
                 res.status(500);
-                res.send("internal server error");
+                res.send({ message: "internal server error", status: false, err: err });
             } else {
                 res.status(200);
                 res.send(users);
@@ -30,7 +30,7 @@ export class UserController {
         UserModel.findById(req.params.id, (err, users) => {
             if (err) {
                 res.status(500);
-                res.send("internal server error");
+                res.send({ message: "internal server error", status: false, err: err });
             } else {
                 res.status(200);
                 res.send(users);
@@ -50,7 +50,7 @@ export class UserController {
             res.send(user);
         }).catch((err) => {
             res.status(500);
-            res.send(err);
+            res.send({ message: "internal server error", status: false, err: err });
         });
     }
 
@@ -65,17 +65,27 @@ export class UserController {
             res.send(user);
         }).catch((err) => {
             res.status(500);
-            res.send(err);
+            res.send({ message: "internal server error", status: false, err: err });
         });
     }
 
     public delete(req: Request, res: Response) {
-        UserModel.findByIdAndRemove(req.params.id).then(() => {
-            res.status(204);
-            res.send("user removed");
+        UserModel.findById(req.params.id).then((user) => {
+            if (user) {
+                return user.remove();
+            } else {
+                return Promise.resolve(null) as Promise<any>;
+            }
+        }).then((removed) => {
+            res.status(200);
+            if (!removed) {
+                res.send({ message: 'resource not found with given ID', status: false });
+            } else {
+                res.send({ message: "resource deleted successfully", status: true, data: removed });
+            }
         }).catch((err) => {
             res.status(500);
-            res.send(err);
+            res.send({ message: "internal server error", status: false, err: err });
         });
     }
-} 
+}

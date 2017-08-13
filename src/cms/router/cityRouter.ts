@@ -15,13 +15,13 @@ export class CityRouter{
     init() {
     this.router.route('/')
     .get(this.controller.get)
-    .post(this.controller.add)
-    delete(this.controller.delete);
+    .post(this.controller.add);
 
     this.router.route('/:id')
     .get(this.controller.getById)
     .put(this.controller.update)
-    .patch(this.controller.patch);
+    .patch(this.controller.patch)
+    .delete(this.controller.delete);
 
     this.router.route('/search/:searchStr')
     .get(this.controller.search)
