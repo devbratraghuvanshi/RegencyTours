@@ -1,6 +1,9 @@
 import { Router, Request, Response, NextFunction } from 'express';
-
 import { Packages } from './../Repository/packageRepository';
+
+import * as Validator from 'validator';
+import * as Moment from 'moment';
+
 
 
 export class PackageController {
@@ -45,6 +48,46 @@ public AddToDB(req: Request, res: Response, next: NextFunction) {
             }
         });
   }
+
+    public search(req: Request, res: Response, next: NextFunction) {
+      console.log(req.params);
+      let city = req.params.city.trim();
+      let minDay = req.params.minDay;
+       let maxDay = req.params.maxDay;
+       let depDate = Moment(req.params.depDate,"DD-MM-YYYY");
+        console.log();
+       let pkgType = req.params.pkgType.trim();
+      if( 
+        Validator.isEmpty(city)     ||
+        !Validator.isNumeric(minDay) || 
+        !Validator.isNumeric(maxDay) || 
+        !depDate.isValid()  || !depDate.isAfter(Date.now()) || 
+        Validator.isEmpty(pkgType)
+      ){
+                res.status(500);
+                res.send("internal server error: invalid input parameter");
+      }else{
+
+    let regExCity = new RegExp(city, 'i');
+    // Pakage json dont have date field add it and use it in filter
+    Packages.find({
+            $and: [
+                { $or:[{cityName: regExCity},{tagDestination: regExCity},{name: regExCity}]},
+                { nights: {$gte:( parseInt(minDay)-1)} },
+                { nights: {$lt:parseInt(maxDay)} },
+                { packageType:{ $eq: 'FIT' } }
+            ]
+        }, (error, pkg) => {
+            if (error) {
+                res.status(500);
+                res.send("internal server error");
+            } else {
+                res.status(200);
+                res.send(pkg);
+            }
+        });
+  }
+    }
 }
 
 export default PackageController;

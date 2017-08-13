@@ -29,6 +29,7 @@ class App {
     this.express.use(BodyParser.urlencoded({ extended: false }));
     this.express.use(passportAuth.initialize());
     this.express.use(this.clientErrorHandler);
+     this.express.use(this.allowCORS);
   }
 
   // Configure API endpoints.
@@ -45,6 +46,11 @@ class App {
     } else {
       next(err)
     }
+  }
+    private allowCORS (req, res, next): void {
+      res.header("Access-Control-Allow-Origin", "*");
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      next();
   }
 }
 

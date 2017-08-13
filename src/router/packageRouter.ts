@@ -16,6 +16,7 @@ export class PackageRouter {
     this.router.get('/', this.controller.get);
     this.router.get('/AddToDB', this.controller.AddToDB);// this is to add the data in mongo db
     this.router.get('/:id', this.controller.getById);
+    this.router.get('/search/:city/:minDay/:maxDay/:depDate/:pkgType', this.controller.search);
   }
 }
 
