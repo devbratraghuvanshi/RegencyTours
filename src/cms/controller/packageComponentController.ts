@@ -42,6 +42,7 @@ export class PackageComponentController {
             component.componentName = req.body.componentName;
             component.componentCode = req.body.componentCode;
             component.status = req.body.status;
+             component.createdBy = req.body.createdBy;
 
             return component.save();
         }).then((component) => {
@@ -92,8 +93,8 @@ export class PackageComponentController {
         let regEx = new RegExp(req.params.searchStr, 'i');
         PackageComponentModel.find({
             '$or': [
-                { ComponentName: regEx },
-                { ComponentCode: regEx }
+                { componentName: regEx },
+                { componentCode: regEx }
             ]
         }, (err, components) => {
             if (err) {
