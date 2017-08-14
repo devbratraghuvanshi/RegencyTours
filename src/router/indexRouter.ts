@@ -10,6 +10,7 @@ import  UserRouter  from './userRouter';
 import  ImageRouter  from './imageRouter';
 import  CityRouter  from '../cms/router/cityRouter';
 import  PackageCategoryRouter  from '../cms/router/packageCategoryRouter';
+import  PackageComponentRouter  from '../cms/router/packageComponentRouter';
 
 export class IndexRouter {
   router: Router
@@ -36,6 +37,7 @@ export class IndexRouter {
     this.router.use('/api/v1/image', ImageRouter);
     this.router.use('/api/v1/city', CityRouter);
     this.router.use('/api/v1/packagecategory', PackageCategoryRouter);
+    this.router.use('/api/v1/packagecomponent', PackageComponentRouter);
   }
 
 }
