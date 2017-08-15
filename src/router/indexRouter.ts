@@ -12,11 +12,10 @@ import  CityRouter  from '../cms/router/cityRouter';
 import  PackageCategoryRouter  from '../cms/router/packageCategoryRouter';
 import  PackageComponentRouter  from '../cms/router/packageComponentRouter';
 import  FactCategoryRouter  from '../cms/router/FactCategoryRouter';
-
+import  PackageSupplierRouter  from '../cms/router/PackageSupplierRouter';
 
 export class IndexRouter {
   router: Router
-
   /**
    * Initialize the indexRouter
    */
@@ -41,8 +40,8 @@ export class IndexRouter {
     this.router.use('/api/v1/packagecategory', PackageCategoryRouter);
     this.router.use('/api/v1/packagecomponent', PackageComponentRouter);
     this.router.use('/api/v1/factcategory', FactCategoryRouter);
+    this.router.use('/api/v1/packagesupplier', PackageSupplierRouter);
   }
-
 }
 // Create the HeroRouter, and export its configured Express.Router
 export default new IndexRouter().router;
