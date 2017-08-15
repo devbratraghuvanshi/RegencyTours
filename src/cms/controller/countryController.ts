@@ -1,53 +1,50 @@
 import { Request, Response } from 'express';
 import { Model } from 'mongoose';
-import { CityModel } from './../model/city';
-export class CityController {
+import { CountryModel } from './../model/country';
+export class CountryController {
 
     public add(req: Request, res: Response) {
-        let newCity = new CityModel(req.body);
-        newCity.save().then((city) => {
+        let newCountry = new CountryModel(req.body);
+        newCountry.save().then((country) => {
             res.status(200);
-            res.send(city);
+            res.send(country);
         }).catch((err) => {
             res.status(500);
             res.send({ message: "internal server error", error: err });
         });
     }
     public get(req: Request, res: Response) {
-        CityModel.find((err, cities) => {
+        CountryModel.find((err, countries) => {
             if (err) {
                 res.status(500);
                 res.send({ message: "internal server error", error: err });
             } else {
                 res.status(200);
-                res.send(cities);
+                res.send(countries);
             }
         })
     }
 
     public getById(req: Request, res: Response) {
-        CityModel.findById(req.params.id, (err, cities) => {
+        CountryModel.findById(req.params.id, (err, users) => {
             if (err) {
                 res.status(500);
                 res.send({ message: "internal server error", error: err });
             } else {
                 res.status(200);
-                res.send(cities);
+                res.send(users);
             }
         })
     }
 
     public update(req: Request, res: Response) {
-        CityModel.findById(req.params.id).then((city) => {
-            city.cityName = req.body.cityName;
-            city.cityCode = req.body.cityCode;
-            city.state = req.body.state;
-            city.lon = req.body.lon;
-            city.lat = req.body.lat;
-            return city.save();
-        }).then((city) => {
+        CountryModel.findById(req.params.id).then((country) => {
+            country.countryName = req.body.CountryName;
+            country.countryCode = req.body.CountryCode;
+            return country.save();
+        }).then((country) => {
             res.status(200);
-            res.send(city);
+            res.send(country);
         }).catch((err) => {
             res.status(500);
             res.send({ message: "internal server error", error: err });
@@ -55,14 +52,14 @@ export class CityController {
     }
 
     public patch(req: Request, res: Response) {
-        CityModel.findById(req.params.id).then((city) => {
+        CountryModel.findById(req.params.id).then((country) => {
             for (var key in req.body) {
-                city[key] = req.body[key];
+                country[key] = req.body[key];
             }
-            return city.save();
-        }).then((city) => {
+            return country.save();
+        }).then((country) => {
             res.status(200);
-            res.send(city);
+            res.send(country);
         }).catch((err) => {
             res.status(500);
             res.send({ message: "internal server error", error: err });
@@ -70,9 +67,9 @@ export class CityController {
     }
 
     public delete(req: Request, res: Response) {
-        CityModel.findById(req.params.id).then((city) => {
-            if (city) {
-                return city.remove();
+        CountryModel.findById(req.params.id).then((country) => {
+            if (country) {
+                return country.remove();
             } else {
                 return Promise.resolve(null) as Promise<any>;
             }
@@ -91,18 +88,18 @@ export class CityController {
 
     public search(req: Request, res: Response) {
         let regEx = new RegExp(req.params.searchStr, 'i');
-        CityModel.find({
+        CountryModel.find({
             '$or': [
-                { cityName: regEx },
-                { cityCode: regEx }
+                { CountryName: regEx },
+                { CountryCode: regEx }
             ]
-        }, (err, cities) => {
+        }, (err, users) => {
             if (err) {
                 res.status(500);
                 res.send("internal server error");
             } else {
                 res.status(200);
-                res.send(cities);
+                res.send(users);
             }
         })
     }
