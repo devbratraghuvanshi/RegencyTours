@@ -11,7 +11,7 @@ export interface IPackageValidityModel extends Document {
     validToDate: Date;
     bookingFromDate: Date;
     bookingToDate: Date;
-    validDays: [String]
+    validDays: [String];
     duration: Number;
     bookingType: String;
     createdAt: Date;

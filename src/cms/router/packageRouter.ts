@@ -1,13 +1,13 @@
 import { Router, Request, Response, NextFunction } from 'express';
 
-import { PackageSupplierController } from './../controller/packageSupplierController';
+import { PackageController } from './../controller/packageController';
 
 
-export class PackageSupplierRouter{
+export class PackageRouter{
     router: Router;
-    controller :PackageSupplierController;
+    controller :PackageController;
     constructor(){
-        this.controller = new PackageSupplierController();
+        this.controller = new PackageController();
         this.router = Router();
         this.init()
     }
@@ -28,4 +28,4 @@ export class PackageSupplierRouter{
   }
 
 }
-export default new PackageSupplierRouter().router;
+export default new PackageRouter().router;
