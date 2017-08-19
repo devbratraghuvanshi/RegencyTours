@@ -7,45 +7,45 @@ import { ICityModel, CitySchema } from './city';
 
 // PackageDetail Interface 
 export interface IPackageDetailModel extends Document {
-    packageCategory: IPackageCategoryModel;
-    packageName: String;
-    packageCode: String;
-    supplier: [IPackageSupplierModel];
-    component: [IPackageComponentModel];
-    destCity: [ICityModel];
+    categoryId: Schema.Types.ObjectId;
+    name: String;
+    code: String;
+    suppliers: [Schema.Types.ObjectId];
+    components: [ Schema.Types.ObjectId];
+    cities: [Schema.Types.ObjectId];
     remarks: String;
     status: Boolean;
-    createdBy: String;
-    createdAt: Date;
-    modifiedAt: Date;
 };
 
 //PackageDetail Schema
 export const PackageDetailSchema = new Schema({
-    packageCategory: {
-        type: PackageCategorySchema,
+    categoryId: {
+        type: Schema.Types.ObjectId,
+        ref:'PackageCategory',
         required: true
     },
-    packageName: {
+    name: {
         type: String,
         unique: true,
         required: true
     },
-    packageCode: {
+    code: {
         type: String,
         unique: true,
         required: true
     },
-    supplier: {
-        type: [PackageSupplierSchema],
+    suppliers: {
+        type: [Schema.Types.ObjectId],
+        ref:'PackageSupplier',
         required: true
     },
-    component: {
-        type: [PackageComponentSchema],
+    components: {
+        type: [Schema.Types.ObjectId],
+        ref:'PackageComponent',
         required: true
     },
-    destCity: {
-        type: [CitySchema],
+    cities: {
+        type: [Schema.Types.ObjectId],
         required: true
     },
     remarks: {
@@ -55,32 +55,7 @@ export const PackageDetailSchema = new Schema({
     status: {
         type: Boolean,
         default: true
-    },
-    createdBy: {
-        type: String,
-        default: 'NA'
-    },
-    createdAt: {
-        type: Date,
-        required: false
-    },
-    modifiedAt: {
-        type: Date,
-        required: false
     }
-}, { collection: 'PackageDetail' });
-
-PackageDetailSchema.pre('save', function (next) {
-    if (this._doc) {
-        let doc = <IPackageDetailModel>this._doc;
-        let now = new Date();
-        if (!doc.createdAt) {
-            doc.createdAt = now;
-        }
-        doc.modifiedAt = now;
-    }
-    next();
-    return this;
 });
 
 export const PackageDetailModel = model<IPackageDetailModel>('PackageDetail', PackageDetailSchema);

@@ -14,8 +14,6 @@ export interface IPackageValidityModel extends Document {
     validDays: [String];
     duration: Number;
     bookingType: String;
-    createdAt: Date;
-    modifiedAt: Date;
 };
 
 //PackageValidity Schema
@@ -42,7 +40,7 @@ export const PackageValiditySchema = new Schema({
         required: true
     },
     validDays: {
-        type: String,
+        type: [String],
         enum: DAYS_OF_WEEK,
         required: true
     },
@@ -54,28 +52,7 @@ export const PackageValiditySchema = new Schema({
         type: String,
         enum: BOOKING_TYPE,
         required: true
-    },
-    createdAt: {
-        type: Date,
-        required: false
-    },
-    modifiedAt: {
-        type: Date,
-        required: false
     }
-}, { collection: 'PackageValidity' });
-
-PackageValiditySchema.pre('save', function (next) {
-    if (this._doc) {
-        let doc = <IPackageValidityModel>this._doc;
-        let now = new Date();
-        if (!doc.createdAt) {
-            doc.createdAt = now;
-        }
-        doc.modifiedAt = now;
-    }
-    next();
-    return this;
 });
 
 export const PackageValidityModel = model<IPackageValidityModel>('PackageValidity', PackageValiditySchema);

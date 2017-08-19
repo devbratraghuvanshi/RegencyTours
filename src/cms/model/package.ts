@@ -10,7 +10,7 @@ export interface IPackageModel extends Document {
     detail : IPackageDetailModel;
     validity: IPackageValidityModel;
     description: IPackageDescriptionModel;
- //   allocation: [IPackageAllocationModel];
+    allocations: [Schema.Types.ObjectId];
     createdBy: String;
     createdAt: Date;
     modifiedAt: Date;
@@ -29,6 +29,10 @@ export const PackageSchema = new Schema({
     description: {
         type: PackageDescriptionSchema,
         required: true
+    },
+    allocations:{
+        type:[Schema.Types.ObjectId],
+        ref:'PackageAllocation'
     },
     createdBy: {
         type: String,
