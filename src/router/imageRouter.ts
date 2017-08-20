@@ -16,8 +16,10 @@ export class ImageRouter{
     }
 
     init(){
-        this.router.route('/holidayImage').post(new FileUploader('holidayImage').multer.single('holidayImage'), this.controller.uploadHolidayImage)
-        this.router.route('/holidayImage2').post(new FileUploader('uploads').multer.array('holidayImage', 2), this.controller.uploadHolidayImage)
+        this.router.route('/holidayImage')
+        .post(new FileUploader('src/images/holidayImage').multer.single('holidayImage'),
+         this.controller.uploadHolidayImage)
+       // this.router.route('/holidayImage2').post(new FileUploader('src/images/holidayImage2').multer.array('holidayImage', 2), this.controller.uploadHolidayImage)
 
     }
 }

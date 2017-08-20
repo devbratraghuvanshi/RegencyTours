@@ -5,7 +5,6 @@ export interface IPackageImageModel extends Document {
     //_id
     packageId: Schema.Types.ObjectId;
     imageUrl: string;
-    thumbnailUrl: Schema.Types.ObjectId;
     imageTag: string;
     attribute: string;
     status: Boolean;
@@ -25,17 +24,14 @@ export const PackageImageSchema = new Schema({
         unique: true,
         required: true
     },
-    thumbnailUrl: {
-        type: String,
-        unique: true,
-        required: true
-    },
     imageTag: {
         type: String,
         required: true
     },
     attribute: {
-        type: String
+        type: String,
+        required: true,
+        enum:["Default","VirtualTour"]
     },
     status: {
         type: Boolean,

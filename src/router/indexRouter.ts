@@ -15,6 +15,7 @@ import  PackageComponentRouter  from '../cms/router/packageComponentRouter';
 import  FactCategoryRouter  from '../cms/router/FactCategoryRouter';
 import  PackageSupplierRouter  from '../cms/router/PackageSupplierRouter';
 import  PackageRouter  from '../cms/router/PackageRouter';
+import  PackageImageRouter  from './../cms/router/packageImageRouter';
 
 export class IndexRouter {
   router: Router
@@ -45,6 +46,7 @@ export class IndexRouter {
     this.router.use('/api/v1/factcategory', FactCategoryRouter);
     this.router.use('/api/v1/packagesupplier', PackageSupplierRouter);
     this.router.use('/api/v1/package', PackageRouter);
+    this.router.use('/api/v1/packageImage/', PackageImageRouter);
   }
 }
 // Create the HeroRouter, and export its configured Express.Router
