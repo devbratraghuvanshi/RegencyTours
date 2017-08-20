@@ -25,8 +25,8 @@ class App {
   // Configure Express middleware.
   private middleware(): void {
     this.express.use(Logger('dev'));
-    this.express.use(BodyParser.json());
-    this.express.use(BodyParser.urlencoded({ extended: false }));
+    this.express.use(BodyParser.json({limit:'50mb'}));
+    this.express.use(BodyParser.urlencoded({ extended: true,limit:'50mb' }));
     this.express.use(passportAuth.initialize());
     this.express.use(this.clientErrorHandler);
      this.express.use(this.allowCORS);

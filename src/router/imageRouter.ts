@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { ImageController } from './../controller/ImageController';
-import { mulUpload } from './../config/multerConfig';
+import { FileUploader } from './../config/multerConfig';
 
 export class ImageRouter{
     router: Router;
@@ -16,7 +16,8 @@ export class ImageRouter{
     }
 
     init(){
-        this.router.route('/holidayImage').post(mulUpload.single('holidayImage'), this.controller.uploadHolidayImage)
+        this.router.route('/holidayImage').post(new FileUploader('holidayImage').multer.single('holidayImage'), this.controller.uploadHolidayImage)
+        this.router.route('/holidayImage2').post(new FileUploader('uploads').multer.array('holidayImage', 2), this.controller.uploadHolidayImage)
 
     }
 }
