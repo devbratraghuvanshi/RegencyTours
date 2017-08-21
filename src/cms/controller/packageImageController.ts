@@ -4,9 +4,9 @@ import { PackageImageModel } from './../model/packageImage';
 export class PackageImageController {
 
     public add(req: Request, res: Response) {
-        if(!req.file){
+        if(!req.file || !req.body.packageId){
             res.status(500);
-            res.send({ message:"file with field name 'PackageImage' is not found!" });
+            res.send({ message:" Ops!!! PackageImage' or packageId is missing bro !" });
             return;
         }
         let newPackageImage = new PackageImageModel(req.body);

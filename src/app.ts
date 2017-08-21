@@ -28,8 +28,9 @@ class App {
     this.express.use(BodyParser.json({limit:'50mb'}));
     this.express.use(BodyParser.urlencoded({ extended: true,limit:'50mb' }));
     this.express.use(passportAuth.initialize());
-    this.express.use(this.clientErrorHandler);
-     this.express.use(this.allowCORS);
+    this.express.use(this.allowCORS);
+    this.express.use('/images', Express.static(__dirname + '/images'));
+    this.express.use(this.clientErrorHandler); // You define error-handling middleware last, after other app.use() 
   }
 
   // Configure API endpoints.
@@ -41,10 +42,10 @@ class App {
     var db = new DB(Mongoose);
   }
   private clientErrorHandler(err, req, res, next): void {
-    if (req.xhr) {
-      res.status(500).send({ error: 'Something failed!' })
+    if (err) {
+      res.status(500).send({ message: 'Omg! looks like Something went wrong bro !', error: err });
     } else {
-      next(err)
+      next();
     }
   }
     private allowCORS (req, res, next): void {

@@ -29,21 +29,20 @@ export class StorageConfig  {
     public diskStorageOptions : multer.DiskStorageOptions;
     constructor(private uploadDir: string) { 
         this.diskStorageOptions = {
-            destination: (req, file, cb) => {
+            destination: (req, file, next) => {
                 var stat = null;
-                try {
+                if(fs.existsSync(uploadDir) || fs.mkdirSync(uploadDir)){
                     stat = fs.statSync(uploadDir);
-                } catch (err) {
-                    fs.mkdirSync(uploadDir);
-                }
-                if (stat && !stat.isDirectory()) {
-                    throw new Error('Directory cannot be created because an inode of a different type exists at "' + this.uploadDir + '"');
-                }
-                cb(null, uploadDir);
+                    next(null, uploadDir);
+                }else{
+                    next(new Error('Directory cannot be created :'),uploadDir);
+                    }
             },
-            filename: (req, file, nextFunc) => {
-                nextFunc(null, file.fieldname + '-' + Date.now() + Path.extname(file.originalname))
+            filename: (req, file, next) => {
+                var fName = file.fieldname + '-' + Date.now() + Path.extname(file.originalname);
+                next(null,fName)
             }
         }
     }
+
 }

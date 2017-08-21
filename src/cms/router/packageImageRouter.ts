@@ -7,7 +7,7 @@ import { FileUploader } from "../../config/multerConfig";
 export class PackageImageRouter {
     router: Router;
     controller :PackageImageController;
-    multer = new FileUploader('src/images/package').multer.single('PackageImage');
+    multer = new FileUploader('/images/package').multer.single('PackageImage');
     constructor(){
         this.controller = new PackageImageController();
         this.router = Router();
