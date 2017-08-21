@@ -29,7 +29,7 @@ class App {
     this.express.use(BodyParser.urlencoded({ extended: true,limit:'50mb' }));
     this.express.use(passportAuth.initialize());
     this.express.use(this.allowCORS);
-    this.express.use('/images', Express.static(__dirname + '/images'));
+    this.express.use('/images', Express.static(__dirname + '/../images'));
     this.express.use(this.clientErrorHandler); // You define error-handling middleware last, after other app.use() 
   }
 

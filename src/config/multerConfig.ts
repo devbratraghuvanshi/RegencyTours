@@ -1,3 +1,4 @@
+import { mkdirSyncP } from './../utility/utility';
 
 import * as Path from 'path';
 import * as multer from 'multer'
@@ -30,13 +31,16 @@ export class StorageConfig  {
     constructor(private uploadDir: string) { 
         this.diskStorageOptions = {
             destination: (req, file, next) => {
-                var stat = null;
-                if(fs.existsSync(uploadDir) || fs.mkdirSync(uploadDir)){
-                    stat = fs.statSync(uploadDir);
-                    next(null, uploadDir);
-                }else{
-                    next(new Error('Directory cannot be created :'),uploadDir);
+                try {
+                    mkdirSyncP(uploadDir);
+                    if (fs.existsSync(uploadDir)){
+                        next(null,uploadDir)
+                    }else{
+                        next(new Error('Directory cannot be created :'),uploadDir);
                     }
+                } catch (error) {
+                    next(new Error('Directory cannot be created :'),uploadDir);
+                }
             },
             filename: (req, file, next) => {
                 var fName = file.fieldname + '-' + Date.now() + Path.extname(file.originalname);

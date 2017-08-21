@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { Model } from 'mongoose';
 import { PackageImageModel } from './../model/packageImage';
+
 export class PackageImageController {
 
     public add(req: Request, res: Response) {
@@ -10,11 +11,11 @@ export class PackageImageController {
             return;
         }
         let newPackageImage = new PackageImageModel(req.body);
-        newPackageImage.packageId = req.body.packageId;
-        newPackageImage.imageUrl = req.file.path.replace(/\\/g,'/');
-        newPackageImage.imageTag = req.body.packageId;
-        newPackageImage.attribute = req.body.attribute;
-        newPackageImage.status = req.body.status;
+        newPackageImage.packageId =  req.body.packageId;
+        newPackageImage.imageUrl =   req.protocol + '://' + req.get('host')+'/' + req.file.path.replace(/\\/g,'/');
+        newPackageImage.imageTag =   req.body.packageId;
+        newPackageImage.attribute =  req.body.attribute;
+        newPackageImage.status =     req.body.status;
         
 
         newPackageImage.save().then((image) => {
