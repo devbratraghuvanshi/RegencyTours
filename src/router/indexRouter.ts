@@ -18,6 +18,7 @@ import  PackageRouter  from '../cms/router/PackageRouter';
 import  PackageImageRouter  from './../cms/router/packageImageRouter';
 import  PackageItineraryRouter  from './../cms/router/packageItineraryRouter';
 import  PackageInclusionRouter from './../cms/router/packageInclusionRouter';
+import  PackageExclusionRouter from './../cms/router/packageInclusionRouter';
 
 export class IndexRouter {
   router: Router
@@ -51,6 +52,7 @@ export class IndexRouter {
     this.router.use('/api/v1/packageImage/', PackageImageRouter);
     this.router.use('/api/v1/packageItinerary/', PackageItineraryRouter);
     this.router.use('/api/v1/packageInclusion/', PackageInclusionRouter);
+    this.router.use('/api/v1/packageExclusion/', PackageExclusionRouter);
   }
 }
 // Create the HeroRouter, and export its configured Express.Router
