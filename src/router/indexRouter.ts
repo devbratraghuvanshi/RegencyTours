@@ -21,6 +21,8 @@ import  PackageInclusionRouter from './../cms/router/packageInclusionRouter';
 import  PackageExclusionRouter from './../cms/router/packageInclusionRouter';
 import  PackageRemarkRouter from './../cms/router/packageRemarkRouter';
 import  PackageTermAndConditionRouter from './../cms/router/packageTermAndConditionRouter';
+import  PackageDestinationRouter from './../cms/router/packageDestinationRouter';
+import  PackageHotelRouter from './../cms/router/packageHotelRouter';
 
 
 export class IndexRouter {
@@ -58,6 +60,9 @@ export class IndexRouter {
     this.router.use('/api/v1/packageExclusion/', PackageExclusionRouter);
     this.router.use('/api/v1/packageRemark/', PackageRemarkRouter);
     this.router.use('/api/v1/packageTermAndCondition/', PackageTermAndConditionRouter);
+    this.router.use('/api/v1/packageDestination/', PackageDestinationRouter);
+    this.router.use('/api/v1/packageHotel/', PackageHotelRouter);
+    
     
   }
 }
