@@ -23,7 +23,8 @@ import  PackageRemarkRouter from './../cms/router/packageRemarkRouter';
 import  PackageTermAndConditionRouter from './../cms/router/packageTermAndConditionRouter';
 import  PackageDestinationRouter from './../cms/router/packageDestinationRouter';
 import  PackageHotelRouter from './../cms/router/packageHotelRouter';
-
+import  PackageCostingRouter from './../cms/router/packageCostingRouter';
+import  PackageCancellationRuleRouter from './../cms/router/packageCancellationRuleRouter';
 
 export class IndexRouter {
   router: Router
@@ -62,8 +63,8 @@ export class IndexRouter {
     this.router.use('/api/v1/packageTermAndCondition/', PackageTermAndConditionRouter);
     this.router.use('/api/v1/packageDestination/', PackageDestinationRouter);
     this.router.use('/api/v1/packageHotel/', PackageHotelRouter);
-    
-    
+    this.router.use('/api/v1/packageCosting/', PackageCostingRouter);
+    this.router.use('/api/v1/packageCancellationRule/', PackageCancellationRuleRouter);
   }
 }
 // Create the HeroRouter, and export its configured Express.Router
