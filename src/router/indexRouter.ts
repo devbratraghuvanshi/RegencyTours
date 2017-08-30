@@ -46,35 +46,36 @@ export class IndexRouter {
    * endpoints.
    */
   init() {
-  this.router.get('/', IndexController.get);
+    var auth = Passport.authenticate('jwt', { session: false});
+    this.router.get('/', IndexController.get);
     this.router.post('/signup',new SignUpController().signUpUser);
     this.router.post('/authenticate',new SignUpController().authenticate);
   //  this.router.get('/memberinfo', Passport.authenticate('jwt', { session: false}),new SignUpController().memberInfo);
   // old one b2cthis.router.use('/api/v1/packages', PackageRouter);
     this.router.use('/api/v1/user',Passport.authenticate('jwt', { session: false}), UserRouter);
    // this.router.use('/api/v1/image', ImageRouter);
-    this.router.use('/api/v1/city', CityRouter);
-    this.router.use('/api/v1/country', CountryRouter);
-    this.router.use('/api/v1/packageCategory', PackageCategoryRouter);
-    this.router.use('/api/v1/packageComponent', PackageComponentRouter);
-    this.router.use('/api/v1/factCategory', FactCategoryRouter);
-    this.router.use('/api/v1/packageSupplier', PackageSupplierRouter);
-    this.router.use('/api/v1/package', PackageRouter);
-    this.router.use('/api/v1/packageImage/', PackageImageRouter);
-    this.router.use('/api/v1/packageItinerary/', PackageItineraryRouter);
-    this.router.use('/api/v1/packageInclusion/', PackageInclusionRouter);
-    this.router.use('/api/v1/packageExclusion/', PackageExclusionRouter);
-    this.router.use('/api/v1/packageRemark/', PackageRemarkRouter);
-    this.router.use('/api/v1/packageTermAndCondition/', PackageTermAndConditionRouter);
-    this.router.use('/api/v1/packageDestination/', PackageDestinationRouter);
-    this.router.use('/api/v1/packageHotel/', PackageHotelRouter);
-    this.router.use('/api/v1/packageCosting/', PackageCostingRouter);
-    this.router.use('/api/v1/packageCancellationRule/', PackageCancellationRuleRouter);
-    this.router.use('/api/v1/packageVisaRequirement/', PackageVisaRequirementRouter);
-    this.router.use('/api/v1/packagePaymentDetail/', PackagePaymentDetailRouter);
-    this.router.use('/api/v1/packageFlightDetail/', PackageFlightDetailRouter);
-    this.router.use('/api/v1/packageDepartureDates/', PackageDepartureDatesRouter);
-    this.router.use('/api/v1/packageAddOnTours/', PackageAddOnToursRouter);
+    this.router.use('/api/v1/city',auth, CityRouter);
+    this.router.use('/api/v1/country',auth, CountryRouter);
+    this.router.use('/api/v1/packageCategory',auth, PackageCategoryRouter);
+    this.router.use('/api/v1/packageComponent',auth, PackageComponentRouter);
+    this.router.use('/api/v1/factCategory',auth, FactCategoryRouter);
+    this.router.use('/api/v1/packageSupplier',auth, PackageSupplierRouter);
+    this.router.use('/api/v1/package',auth, PackageRouter);
+    this.router.use('/api/v1/packageImage/',auth, PackageImageRouter);
+    this.router.use('/api/v1/packageItinerary/',auth, PackageItineraryRouter);
+    this.router.use('/api/v1/packageInclusion/',auth, PackageInclusionRouter);
+    this.router.use('/api/v1/packageExclusion/',auth, PackageExclusionRouter);
+    this.router.use('/api/v1/packageRemark/',auth, PackageRemarkRouter);
+    this.router.use('/api/v1/packageTermAndCondition/',auth, PackageTermAndConditionRouter);
+    this.router.use('/api/v1/packageDestination/',auth, PackageDestinationRouter);
+    this.router.use('/api/v1/packageHotel/',auth, PackageHotelRouter);
+    this.router.use('/api/v1/packageCosting/',auth, PackageCostingRouter);
+    this.router.use('/api/v1/packageCancellationRule/',auth, PackageCancellationRuleRouter);
+    this.router.use('/api/v1/packageVisaRequirement/',auth, PackageVisaRequirementRouter);
+    this.router.use('/api/v1/packagePaymentDetail/',auth, PackagePaymentDetailRouter);
+    this.router.use('/api/v1/packageFlightDetail/',auth, PackageFlightDetailRouter);
+    this.router.use('/api/v1/packageDepartureDates/',auth, PackageDepartureDatesRouter);
+    this.router.use('/api/v1/packageAddOnTours/',auth,PackageAddOnToursRouter);
   }
 }
 // Create the HeroRouter, and export its configured Express.Router
