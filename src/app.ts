@@ -1,7 +1,6 @@
 import * as Express from 'express';
 import * as Logger from 'morgan';
 import * as BodyParser from 'body-parser';
-import * as passport from 'passport';
 import * as Mongoose from "mongoose";
 
 import { DB } from "./dbConfig/db"

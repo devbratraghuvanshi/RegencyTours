@@ -19,10 +19,11 @@ export class SignUpController {
       });
 
       var newUser = new UserModel({
-        name: req.body.name,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
         userId: req.body.userId,
+        email: req.body.email,
         mobile: req.body.mobile,
-        email: req.body.email
       });
 
       newUserCredential.save().then( () => {
