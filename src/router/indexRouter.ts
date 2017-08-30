@@ -25,6 +25,11 @@ import  PackageDestinationRouter from './../cms/router/packageDestinationRouter'
 import  PackageHotelRouter from './../cms/router/packageHotelRouter';
 import  PackageCostingRouter from './../cms/router/packageCostingRouter';
 import  PackageCancellationRuleRouter from './../cms/router/packageCancellationRuleRouter';
+import  PackageVisaRequirementRouter from './../cms/router/packageVisaRequirementRouter';
+import  PackagePaymentDetailRouter from './../cms/router/packagePaymentDetailRouter';
+import  PackageFlightDetailRouter from './../cms/router/packageFlightDetailRouter';
+import  PackageDepartureDatesRouter from './../cms/router/packageDepartureDatesRouter';
+import  PackageAddOnToursRouter from './../cms/router/packageAddOnToursRouter';
 
 export class IndexRouter {
   router: Router
@@ -65,6 +70,11 @@ export class IndexRouter {
     this.router.use('/api/v1/packageHotel/', PackageHotelRouter);
     this.router.use('/api/v1/packageCosting/', PackageCostingRouter);
     this.router.use('/api/v1/packageCancellationRule/', PackageCancellationRuleRouter);
+    this.router.use('/api/v1/packageVisaRequirement/', PackageVisaRequirementRouter);
+    this.router.use('/api/v1/packagePaymentDetail/', PackagePaymentDetailRouter);
+    this.router.use('/api/v1/packageFlightDetail/', PackageFlightDetailRouter);
+    this.router.use('/api/v1/packageDepartureDates/', PackageDepartureDatesRouter);
+    this.router.use('/api/v1/packageAddOnTours/', PackageAddOnToursRouter);
   }
 }
 // Create the HeroRouter, and export its configured Express.Router
