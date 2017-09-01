@@ -90,8 +90,21 @@ export class PackageController {
     }
 
     public search(req: Request, res: Response) {
-        let regEx = new RegExp(req.params.searchStr, 'i');
-        PackageModel.find({ description: regEx}, (err, Packages) => {
+        let cityId = req.params.city;
+        let minDay = req.params.minDay;
+        let maxDay = req.params.maxDay;
+        let depDate = req.params.depDate;
+        let pkgType = req.params.pkgType;
+
+        PackageModel.find({
+            $and: [
+                {'detail.cities': cityId},
+                { 'validity.duration': {$gte:( parseInt(minDay)-1)} },
+                { 'validity.duration': {$lte:parseInt(maxDay)} },
+                { 'validity.validFromDate': {$gte:new Date(depDate)} },
+                { 'validity.packageType': {$eq:pkgType} }
+            ]
+        }, (err, Packages) => {
             if (err) {
                 res.status(500);
                 res.send({ message: "internal server error", error: err });

@@ -52,7 +52,7 @@ export class IndexRouter {
     this.router.post('/authenticate',new SignUpController().authenticate);
   //  this.router.get('/memberinfo', Passport.authenticate('jwt', { session: false}),new SignUpController().memberInfo);
   // old one b2cthis.router.use('/api/v1/packages', PackageRouter);
-    this.router.use('/api/v1/user',Passport.authenticate('jwt', { session: false}), UserRouter);
+    this.router.use('/api/v1/user',auth, UserRouter);
    // this.router.use('/api/v1/image', ImageRouter);
     this.router.use('/api/v1/city',auth, CityRouter);
     this.router.use('/api/v1/country',auth, CountryRouter);

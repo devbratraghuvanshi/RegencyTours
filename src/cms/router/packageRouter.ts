@@ -23,8 +23,8 @@ export class PackageRouter{
     .patch(this.controller.patch)
     .delete(this.controller.delete);
 
-    this.router.route('/search/:searchStr')
-    .get(this.controller.search)
+   // this.router.route('/search/:searchStr').get(this.controller.search);
+    this.router.get('/search/:city/:minDay/:maxDay/:depDate/:pkgType', this.controller.search);
   }
 
 }
